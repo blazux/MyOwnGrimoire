@@ -1,0 +1,14 @@
+           SPELL=libxfce4ui
+         VERSION=4.16.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+     SOURCE_HASH=sha512:07ce8399ca860d5414f91b0795ba61eff21b6022a9e8c26de77a6c4e6c45371e10318b626a892b7e2998d95c7e92cf32c2cd48fdefc291bb5521fe8a6cf93aed
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE=http://www.xfce.org/
+      LICENSE[0]=LGPL
+         ENTERED=20100303
+           SHORT="unified widgets library for Xfce4"
+cat << EOF
+Replacement for libxfcegui4.
+EOF

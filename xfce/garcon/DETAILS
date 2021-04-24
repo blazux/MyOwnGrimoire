@@ -1,0 +1,19 @@
+           SPELL=garcon
+         VERSION=0.8.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:"
+   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+     SOURCE_HASH=sha512:708c68c31c0d3d89ecdde4790594837af0d065ecb805131fd7db2eb4c433c0523f44d51f2040f7bf9af729537e5f9e89ed06a435fc0c4e6113db00ad78ba8ce0
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=http://www.xfce.org/
+      LICENSE[0]=LGPL
+         ENTERED=20110123
+           SHORT="Xfce4 freedesktop.org compliant menu implementation"
+cat << EOF
+This is garcon, a freedesktop.org compliant menu implementation based
+on GLib and GIO. It was started as a complete rewrite of the former
+Xfce menu library called libxfce4menu, which, in contrast to garcon,
+was lacking menu merging features essential for loading menus modified
+with menu editors.
+EOF

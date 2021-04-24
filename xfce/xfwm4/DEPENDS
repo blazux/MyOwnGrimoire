@@ -1,0 +1,50 @@
+depends gtk+2 &&
+depends libxfce4util &&
+depends libxfce4ui &&
+depends xfconf &&
+depends libwnck3 &&
+depends dbus-glib &&
+
+if [[ $COMPOSITOR == y ]]; then
+  depends libxdamage '--enable-compositor' &&
+  depends libxrender '--enable-render'
+else
+  optional_depends libxrender \
+                   "--enable-render" \
+                   "--disable-render" \
+                   "for X11 Xrender extension support"
+fi &&
+
+optional_depends libxrandr \
+                 "--enable-randr" \
+                 "--disable-randr" \
+                 "for X11 Xrandr extension support" &&
+
+if is_depends_enabled $SPELL libxrandr; then
+  depends libxrender '--enable-render'
+fi &&
+
+optional_depends GETTEXT \
+                 "--enable-nls" \
+                 "--disable-nls" \
+                 "for Native Language Support" &&
+
+optional_depends libxext \
+                 "--enable-xsync" \
+                 "--disable-xsync" \
+                 "for xsync extension" &&
+
+optional_depends gnome-doc-utils \
+                 "--enable-gen-doc" \
+                 "--disable-gen-doc" \
+                 "to generate HTML documentation" &&
+
+optional_depends startup-notification \
+                 "--enable-startup-notification" \
+                 "--disable-startup-notification" \
+                 "for startup notification" &&
+
+optional_depends libdrm \
+                 "--enable-libdrm" \
+                 "--disable-libdrm" \
+                 "for interface to kernel DRM services"

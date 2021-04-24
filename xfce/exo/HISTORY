@@ -1,0 +1,121 @@
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2015-03-16 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: removed libffi -- it's not a direct dependency
+
+2015-03-04 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: version 0.10.3
+
+2013-03-08 Sukneet Basuta <sukneet@sourcemage.org>
+	* CONFLICTS: removed, removed exo-0.5
+
+2012-12-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.10.2
+
+2012-12-27 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: PATCH_LEVEL -> PATCHLEVEL
+
+2012-12-26 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: added dependencies on atk, bzip2, cairo, expat, fontconfig,
+	  freetype2, gdk-pixbuf2, glib2, harfbuzz, libffi, libice, libpng, libsm,
+	  libx11, libxau, libxcb, libxdmcp, libxext, libxrender, pango, pcre,
+	  pixman, util-linux, zlib
+	* DETAILS: bumped PATCH_LEVEL
+
+2012-12-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.10.1
+
+2012-12-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.10.0
+
+2012-11-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.9.1
+	* DEPENDS: dropped deprecated dependencies
+
+2012-05-10 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: 0.8.x requires libxfce4ui
+
+2012-04-29 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.8.0
+
+2011-09-13 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated spell to 0.6.2
+
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.6.0 (part of Xfce 4.8)
+	* DEPENDS: updated dependencies
+	* PRE_BUILD: added, to fix network interaction while generation docs
+
+2010-07-06 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing python dep
+
+2010-05-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 0.3.107 (Xfce 4.6.2)
+
+2010-03-06 Sukneet Basuta <sukneet@sourcemage.org>
+	* CONFLICTS: added, conflicts with exo-0.5
+
+2009-12-25 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 0.3.106
+
+2009-10-10 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 0.3.104
+
+2009-10-09 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 0.3.103. Updated SOURCE_URL.
+
+2009-04-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 0.3.101 (Xfce 4.6.1)
+	* DEPENDS: added missing opt deps
+
+2009-02-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 0.3.100
+	* PRE_BUILD, exo-mount-hal.patch: removed
+
+2008-10-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: quoting paths; fixed short desc
+	* DEPENDS: cleaned up
+	* PRE_BUILD: quoting paths
+
+2008-09-17 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: use grimoire-wide release version
+
+2008-04-02 Vlad Glagolev <stealth@sourcemage.org>
+	* PRE_BUILD: added a patch to fix hal mount problem
+
+2007-12-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: gurus => upstream, refixed SOURCE_URL
+	* DEPENDS: cleaned up
+
+2007-12-02 Elisamuel Resto <ryuji@sourcemage.org>
+	* DEPENDS: optionally depend on hal and libnotify
+
+2007-12-02 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 0.3.4. Fixed SOURCE_URL and WEB_SITE
+
+2007-01-25 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: uri is required
+
+2007-01-23 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 0.3.2. Updated SOURCE & SOURCE_URL
+
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-11-29 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-03-18 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.3.0
+	* DEPENDS: removed dependency on dbus, added optional_depends on pygtk2
+
+2005-01-07 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: changed LICENSE to LGPL
+	* DEPENDS: added dependency on libxfcegui4
+
+2005-01-01 Bas van Gils <bas.vangils@cs.ru.nl>
+	* created spell

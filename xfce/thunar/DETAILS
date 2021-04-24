@@ -1,0 +1,17 @@
+           SPELL=thunar
+         VERSION=4.16.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+        WEB_SITE=http://thunar.xfce.org/
+     SOURCE_HASH=sha512:0f288018ead108c6a170a9b98d45d6c005301eb51526b357ab81411724451f0e6a1154ae44dd7681ee5bc9a8807df1497ed26d1af0ac002d68c69fede808cc51
+      LICENSE[0]=GPL
+      LICENSE[1]=LGPL
+         ENTERED=20030608
+        KEYWORDS="xfce"
+           SHORT="file manager for the Xfce Desktop Environment"
+cat << EOF
+Thunar is a file manager for the Xfce Desktop Environment.
+EOF

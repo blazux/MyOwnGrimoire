@@ -1,0 +1,23 @@
+           SPELL=xfce4-power-manager
+         VERSION=4.16.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE="$SPELL-$VERSION.tar.bz2"
+SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+     SOURCE_HASH=sha512:1c6ecfb7696bc13c9b11fdfb4ad4e3278de2350bbc59c84c933b28c07c1a0c55b9954794e1f57e4407d2b54ffaace9ea5baed829bf0683332cf9d12bff7e71ec
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="http://www.xfce.org"
+      LICENSE[0]="GPL"
+         ENTERED=20120429
+        KEYWORDS=""
+           SHORT="power manager for the Xfce desktop"
+cat << EOF
+Xfce power manager manages the power sources on the computer and the
+devices that can be controlled to reduce their power consumption (such as
+LCD brightness level, monitor sleep, CPU frequency scaling). In addition,
+xfce4-power-manager provides a set of freedesktop-compliant DBus interfaces
+to inform other applications about current power level so that they can
+adjust their power consumption, and it provides the inhibit interface which
+allows applications to prevent automatic sleep actions via the power manager;
+as an example, the operating system's package manager should make use of
+this interface while it is performing update operations.
+EOF

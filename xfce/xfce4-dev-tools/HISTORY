@@ -1,0 +1,28 @@
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2015-03-04 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 4.12.0
+
+2012-04-29 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 4.10.0
+
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 4.8.0 (part of Xfce 4.8)
+
+2009-04-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: comes with Xfce 4.6.0
+
+2009-02-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 4.6.0
+
+2008-10-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: quoting paths; cleaned up; fixed descs; added signature
+	  ignore
+	* DEPENDS: cleaned up
+
+2008-09-17 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: use grimoire-wide release version
+
+2008-08-22 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS, DETAILS: spell created

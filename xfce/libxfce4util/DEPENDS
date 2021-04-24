@@ -1,0 +1,12 @@
+depends glib2 &&
+depends intltool &&
+
+optional_depends GETTEXT \
+                 "--enable-nls" \
+                 "--disable-nls" \
+                 "for Native Language Support" &&
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "use gtk-doc to build documentation"

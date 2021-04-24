@@ -1,0 +1,130 @@
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2017-03-01 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Fixed gudev dependency
+
+2015-03-04 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 1.6.6, UPSTREAM_HASH -> WORKS_FOR_ME
+	* DEPENDS: UDEV -> DEVICE-MANAGER
+
+2013-07-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: udev => UDEV
+
+2013-06-14 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.6.3
+	  SOURCE matches upstream posted SHA1
+
+2013-03-08 Sukneet Basuta <sukneet@sourcemage.org>
+	* CONFLICTS: removed, removed thunar-1.1
+
+2012-12-31 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: removed dependencies on expat, libffi, libxau, libxcb, libxdmcp,
+	  libxext, libxrender
+
+2012-12-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.6.2
+
+2012-12-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: added dependencies on atk, cairo, dbus, expat, fontconfig,
+	  freetype2, gdk-pixbuf2, glib2, gtk+2, harfbuzz, libffi, libice, libpng,
+	  libsm, libx11, libxau, libxcb, libxdmcp, libxext, libxrender, pango,
+	  pixman, xfconf
+	* DETAILS: bumped PATCHLEVEL
+
+2012-12-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.6.1
+
+2012-12-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.6.0
+
+2012-11-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.5.2
+	* DEPENDS: dropped deprecated dependencies
+
+2012-04-29 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.4.0
+
+2011-09-21 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.2.3
+
+2011-08-06 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.2.2 -- return back to stable branch
+
+2011-07-13 Arjan Bouter <abouter@sourcemage.org>
+        * DEPENDS: switched from EXTRAS to GUDEV for udev
+
+2011-05-16 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.3.0
+
+2011-01-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.2.1
+
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.2.0 (part of Xfce 4.8)
+	* DEPENDS: updated dependencies
+	* PRE_BUILD: fixed network interaction while generation docs
+
+2010-05-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 1.0.2 (Xfce 4.6.2)
+
+2010-03-06 Sukneet Basuta <sukneet@sourcemage.org>
+	* CONFLICTS: added, conflicts with thunar-1.1
+
+2009-04-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 1.0.1 (Xfce 4.6.1)
+	* DEPENDS: added gnome-doc-utils opt dep
+
+2009-02-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 1.0.0
+	* DEPENDS: added missing dep
+	* PRE_BUILD: use static name; added more langs
+	* thunar-zombie.patch: removed
+
+2008-11-14 Vlad Glagolev <stealth@sourcemage.org>
+	* PRE_BUILD: don't use "SCRIPT"; quoting paths
+
+2008-11-14 George Sherwood <gsherwood@sourcemage.org>
+	* PRE_BUILD: Added patch.
+	* thunar-zombie.patch: Added upstream patch. Bug #14884
+	  See http://bugzilla.xfce.org/show_bug.cgi?id=2983
+
+2008-10-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.9.3; quoting paths; fixed short desc
+	* PRE_BUILD: quoting paths; cleaned up
+
+2008-09-17 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: use grimoire-wide release version
+
+2008-04-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: shared-mime-info is required to display the files correctly
+
+2008-03-13 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: fixed D-Bus support
+
+2007-12-22 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added req dep -- desktop-file-utils, cleaned up
+
+2007-12-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: refixed SOURCE_URL, gurus => upstream
+
+2007-12-02 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 0.9.0. Fixed SOURCE_URL and WEB_SITE
+
+2007-11-11 Vlad Glagolev <stealth@sourcemage.org>
+	* Thunar-0.8.0.tar.bz2.sig: fixed sig
+
+2007-11-05 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: fixed xfce-panel dep, added gamin as optional
+	* PRE_BUILD: cleaned up
+
+2007-08-20 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added dbus, gtk-doc, hal, libexif, pcre and
+	  startup-notification as optional
+
+2007-02-19 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: PATCHLEVEL++
+	* PRE_BUILD: added for proper docs installation
+
+2007-01-23 George Sherwood <george@beernabeer.com>
+	* DEPENDS, DETAILS, HISTORY: created the spell

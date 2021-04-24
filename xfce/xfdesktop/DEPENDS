@@ -1,0 +1,31 @@
+depends gtk+2 &&
+depends libwnck &&
+depends libxfce4util &&
+depends libxfce4ui &&
+depends xfconf &&
+depends exo &&
+
+optional_depends GETTEXT \
+                 "--enable-nls" \
+                 "--disable-nls" \
+                 "for Native Language Support" &&
+
+optional_depends thunar \
+                 "--enable-thunarx" \
+                 "--disable-thunarx" \
+                 "for desktop launcher icons" &&
+
+optional_depends libnotify \
+                 "--enable-notifications" \
+                 "--disable-notifications" \
+                 "for Mount notification support" &&
+
+optional_depends garcon \
+                 "--enable-desktop-menu" \
+                 "--disable-desktop-menu" \
+                 "for desktop menu module" &&
+
+optional_depends dbus-glib \
+                 "--enable-desktop-icons --enable-file-icons" \
+                 "--disable-desktop-icons --disable-file-icons" \
+                 "for D-Bus usage (desktop and file icons)"

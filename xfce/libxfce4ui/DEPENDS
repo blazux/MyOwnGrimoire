@@ -1,0 +1,37 @@
+depends atk &&
+depends cairo &&
+depends dbus &&
+depends dbus-glib &&
+depends fontconfig &&
+depends freetype2 &&
+depends gdk-pixbuf2 &&
+depends glib2 &&
+depends gtk+2 &&
+depends harfbuzz &&
+depends libpng &&
+depends libx11 &&
+depends libsm  &&
+depends libxfce4util &&
+depends pango &&
+depends pixman &&
+depends xfconf &&
+
+optional_depends glade3 \
+                 "--enable-gladeui" \
+                 "--disable-gladeui" \
+                 "for glade interface designer integration" &&
+
+optional_depends startup-notification \
+                 "--enable-startup-notification" \
+                 "--disable-startup-notification" \
+                 "for notification support" &&
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "use gtk-doc to build documentation" &&
+
+optional_depends gtk+3 \
+                 "--enable-gtk3" \
+                 "--disable-gtk3" \
+                 "for GTK+ 3 support"
