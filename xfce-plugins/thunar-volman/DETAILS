@@ -1,0 +1,20 @@
+           SPELL=thunar-volman
+         VERSION=4.16.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=http://archive.xfce.org/src/xfce/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=http://goodies.xfce.org/projects/thunar-plugins/thunar-volman
+     SOURCE_HASH=sha512:33b7561e55491b793aa634dfa0b108788286e6b7a2f60a781b8ba10f73de74630520736ae99c4db66ae2da562a82bb1a6bdacd8307d6d452f26e647da6471af8
+      LICENSE[0]=GPL
+         ENTERED=20070128
+        KEYWORDS="xfce"
+           SHORT="enables automatic management of removable drives and media"
+cat << EOF
+The Thunar Volume Manager is an extension for the Thunar file manager, 
+which enables automatic management of removable drives and media. For 
+example, if thunar-volman is installed and configured properly, and you 
+plug in your digital camera, it will automatically launch your preferred 
+photo application and import the new pictures from the camera into your 
+photo collection.
+EOF

@@ -1,0 +1,22 @@
+2015-03-04 Pavel Vinogradov <public@sourcemage.org>
+	* DETAILS: updated spell to 0.8.1
+	* DEPENDS: UDEV -> DEVICE-MANAGER
+
+2013-07-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: udev => UDEV
+
+2012-04-29 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 0.8.0
+
+2011-07-13 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: switched from EXTRAS to GUDEV for udev
+
+2011-01-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.6.0
+	* DEPENDS: renewed dependencies
+
+2007-12-02 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 0.2.0
+
+2007-01-28 George Sherwood <george@beernabeer.com>
+	* DEPENDS, DETAILS, HISTORY: created the spell
