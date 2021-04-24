@@ -1,0 +1,60 @@
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2014-04-05 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: renewed dependencies
+
+2012-11-30 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added tumbler suggest dep
+
+2012-08-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.6.3
+
+2012-07-30 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.6.2
+	* DEPENDS: added optional gettext dependency
+
+2012-03-13 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.3.5
+
+2012-02-01 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.3.4
+
+2012-01-15 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.3.2
+
+2011-12-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.3.0
+
+2011-10-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.2.0
+
+2011-10-15 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.1.1
+
+2011-02-03 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on thunar-vfs
+
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: renewed source url; quoting paths
+
+2009-05-16 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.22
+
+2008-11-29 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.21
+
+2008-05-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.20
+
+2008-05-10 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.19
+
+2008-03-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.18
+
+2008-03-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.17
+
+2007-11-19 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS, DETAILS: spell created

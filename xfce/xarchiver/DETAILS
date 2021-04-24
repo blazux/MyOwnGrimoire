@@ -1,0 +1,15 @@
+           SPELL=xarchiver
+         VERSION=0.5.4.17
+          SOURCE=$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://github.com/ib/$SPELL/archive/refs/tags/$SOURCE
+        WEB_SITE=https://github.com/ib/xarchiver
+     SOURCE_HASH=sha512:5b19fd0fb90f99aee0ac2576bc4efce9ef4eef9119fc118815f6d925e3877c0895475fbdf7363d8adfb6371fb7fd73299ea3a7cb3b6d9fff19c89d1d287d3a84
+#      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
+      LICENSE[0]=GPL
+         ENTERED=20061124
+        KEYWORDS="xfce"
+           SHORT="Archive manager for the XFce Desktop Environment"
+cat << EOF
+Xarchiver is a archive manager for the XFce Desktop Environment
+EOF

@@ -1,0 +1,39 @@
+2015-04-02 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing glib2 dependency
+
+2013-09-20 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing libxfcegui4 dependency
+
+2013-06-14 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.7.0
+	  SOURCE matches upstream posted SHA1
+
+2012-05-26 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: added missing dep; PATCHLEVEL=1
+
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated source url
+	* DEPENDS: added gtk+2 dependency
+
+2009-12-30 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 0.6.0. Fixed SOURCE_URL[0]
+
+2009-05-09 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.5.3
+
+2008-12-05 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 0.5.2
+
+2008-11-23 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 0.5.1
+
+2008-11-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.5.0
+
+2008-09-25 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: Changed SOURCE_URL[0] extension; updated spell to 0.4.1;
+	  quoting paths
+	* PRE_BUILD, common_c.patch: removed, no longer needed
+
+2008-05-24 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFLICTS, DETAILS, DEPENDS, PRE_BUILD: created spell

@@ -1,0 +1,16 @@
+           SPELL=gtk-xfce-engine
+         VERSION=3.2.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=http://archive.xfce.org/src/archive/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=http://www.xfce.org/
+     SOURCE_HASH=sha512:c965e597c1b4aa04f3b474f3c4cea249aa6e753be697d5d3d7a19184adca650fc084f39acbd357f53eaf4180d96d5d3499866367e221ae445de4864fc9487012
+      LICENSE[0]=GPL
+         ENTERED=20030608
+        KEYWORDS="theme xfce"
+           SHORT="gtk+2 theme engine desinged for Xfce"
+cat << EOF
+gtk-xfce-engine is a gtk+2 theme engine designed for Xfce4, but can be used
+without Xfce.
+EOF

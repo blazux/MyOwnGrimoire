@@ -1,0 +1,23 @@
+depends glib2 &&
+
+optional_depends gtk+3 \
+                 "--enable-gtk3" \
+                 "--disable-gtk3" \
+                 "use GTK+ 3 instead of GTK+ 2" &&
+
+if is_depends_enabled ${SPELL} gtk+3; then
+  depends gtksourceview3
+else
+  depends gtk+2 &&
+  depends gtksourceview
+fi &&
+
+optional_depends dbus-glib \
+                 "--enable-dbus" \
+                 "--disable-dbus" \
+                 "for D-BUS support" &&
+
+optional_depends GETTEXT \
+                 "--enable-nls" \
+                 "--disable-nls" \
+                 "for Native Language Support"

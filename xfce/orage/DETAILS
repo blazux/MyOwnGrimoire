@@ -1,0 +1,18 @@
+           SPELL=orage
+         VERSION=4.12.1
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+   SOURCE_URL[0]=https://archive.xfce.org/src/apps/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha512:3fec0201171140586cdc9bcf151450a7086515e18b5815afe4fe4c4726ba554c50582b0479e52985b330140c51b7233ef81f678f986f848afbeee74c66b2d196
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=http://www.xfce.org/
+      LICENSE[0]=GPL
+         ENTERED=20070123
+        KEYWORDS="xfce"
+           SHORT="calendar for the Xfce Desktop Environment"
+cat << EOF
+Orage provides a calendar which integrates nicely into the Xfce desktop 
+environment. It is highly configurable and supports alerts based on dates. It
+warns you with popup or audio alarm. As it is an application kind-of every day
+use it launches itself in the background as a daemon.
+EOF

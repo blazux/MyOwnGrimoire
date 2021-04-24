@@ -1,0 +1,50 @@
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2019-04-11 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.4.1
+	* DEPENDS: updated
+	* CONFIGURE: added, for gsettings flags
+	* BUILD: added, to use MOUSEPAD_OPTS
+
+2012-12-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.3.0
+	* DEPENDS: rewritten dependency list
+
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: renewed source url
+
+2009-04-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: comes with Xfce 4.6.0
+
+2009-02-27 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: 0.2.16
+
+2008-10-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.2.14 (Xfce 4.4.3); quoting paths; fixed
+	  descs; use RELEASE_VERSION
+
+2007-12-03 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.2.13, gurus => upstream
+	* DEPENDS: cleaned up
+
+2007-01-23 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 0.2.12. Updated SOURCE & SOURCE_URL.
+
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-11-29 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-03-20 Arjan Bouter <abouter@sourcemage.org>
+	* POST_REMOVE: source FUNCTIONS until dispel does that
+
+2005-02-21 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* FINAL, POST_REMOVE: run update_desktop_database
+
+2005-01-28 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS, DETAILS, HISTORY: created this spell

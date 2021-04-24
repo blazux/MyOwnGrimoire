@@ -1,0 +1,12 @@
+depends libxfce4util &&
+depends dbus-glib &&
+depends gstreamer-1.0 &&
+depends gst-plugins-base-1.0 &&
+optional_depends libnotify \
+                 "--enable-notify-plugin" \
+                 "--disable-notify-plugin" \
+                 "to use pop-up nofifications" &&
+optional_depends taglib \
+                 "--enable-taglib" \
+                 "--disable-taglib" \
+                 "support for audio meta data" 
