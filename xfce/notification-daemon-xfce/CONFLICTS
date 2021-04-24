@@ -1,3 +1,0 @@
-conflicts notification-daemon &&
-conflicts notify-osd &&
-conflicts xfce4-notifyd
