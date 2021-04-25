@@ -44,3 +44,7 @@ Use at your own risk.
  - xfce4-genmon-plugin DONE : updated to 4.1.0
  - xfce4-gvfs-mount REMOVED
  - xfce4-mailwatch-plugin DONE : updated to 1.3.0
+ - xfce4-mount-plugin DONE : updated 1.1.5
+ - xfce4-mpc-plugin DONE : updated to 0.5.2
+ - xfce4-netload-plugin DONE : updated to 1.4.0
+ - xfce4-notes-plugin DONE : updated to 1.9.0

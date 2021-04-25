@@ -1,0 +1,15 @@
+           SPELL=xfce4-mount-plugin
+         VERSION=1.1.5
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-mount-plugin/start
+      SOURCE_HASH=sha512:bf4e89c57a1f61120919a272c6f343a9fb4072a977848031784cbdf96e4bf248d878c6e28a812930daf9a0515efcae20b421e0b2db176f05b8f29d75d90a28ca
+      LICENSE[0]=GPL
+         ENTERED=20050318
+        KEYWORDS="xfce"
+           SHORT="a mount/umount utility for the xfce4 panel"
+cat << EOF
+This is a mount/umount utility for the xfce4 panel.
+EOF

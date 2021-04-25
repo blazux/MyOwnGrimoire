@@ -1,0 +1,16 @@
+           SPELL=xfce4-mpc-plugin
+         VERSION=0.5.2
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+SOURCE_HASH=sha512:c0e6580d5c9c8677a1ad4e8ec4233de1aafc8a2e6744d5d82d3f58f5689e53096a40ff0d1355475a0fdb3e6bc54b44aabb9ca91e5e9caf5cf3ef6fdd4778c22e
+      LICENSE[0]=GPL
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-mpc-plugin/start
+        KEYWORDS="xfce"
+         ENTERED=20070503
+           SHORT="Musicpd client plugin for the Xfce Desktop Environment"
+cat << EOF
+This is a simple Musicpd (http://www.musicpd.org) client plugin for the
+Xfce 4.4 panel.
+EOF
