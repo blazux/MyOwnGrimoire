@@ -1,0 +1,19 @@
+           SPELL=xfce4-verve-plugin
+         VERSION=2.0.1
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-verve-plugin/start
+SOURCE_HASH=sha512:c8397bd833e2a2cf25d86bd9234bdbafed00ce0783273532a57e87a5182d26b3e84b402ed8c9fd9204d5d46fbca257fcf6601f279d9929d806a4c36338379876
+      LICENSE[0]=GPL
+         ENTERED=20070124
+        KEYWORDS="xfce"
+           SHORT="A command entry box for the XFce4 panel"
+cat << EOF
+verve puts a small entry widget onto your panel. You can execute programs by
+typing their names in the widget and hitting Enter or Ctrl+Enter. The latter
+runs the command in a terminal.
+It maintains history which is shared with xfrun4. This history can be accessed
+by Up and Down keys.
+EOF

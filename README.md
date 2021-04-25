@@ -30,3 +30,5 @@ Use at your own risk.
  - thunar-thumbnailers REMOVED : not needed annymore for thumbnails
  - thunar-vcs-plugin DONE : updated to 0.2.0
  - thunar-volman DONE : updated to 4.16.0
+ - verve-plugin DONE : renamed to xfce4-verve-plugin for consistancy, updated to 2.0.1
+
