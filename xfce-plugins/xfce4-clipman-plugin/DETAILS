@@ -1,0 +1,15 @@
+           SPELL=xfce4-clipman-plugin
+         VERSION=1.6.1
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+  SOURCE_HASH[0]=sha512:2a2aa5d7b5d841b11c6d54d4872fc8cbfb83981b2d4678075ff5aa2a4df9ea88de95b837bf3896d7ce5f434827ebb64238e68cca2e17a7104433ed5847d949dd
+        WEB_SITE=http://xfce-goodies.berlios.de
+      LICENSE[0]=BSD
+         ENTERED=20031009
+        KEYWORDS="xfce"
+           SHORT="a clipboard history for the XFce4 panel"
+cat << EOF
+This is a simple cliboard history for XFCE4 Panel
+EOF

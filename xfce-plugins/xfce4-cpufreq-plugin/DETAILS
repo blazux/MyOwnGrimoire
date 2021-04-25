@@ -1,0 +1,23 @@
+           SPELL=xfce4-cpufreq-plugin
+         VERSION=1.2.5
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-cpufreq-plugin/start
+SOURCE_HASH=sha512:4a098861875f2a413e8d3778e4eef709f00efc87d9cd76ddab22462653ec21f4b8756c421e3f0726c56f151f0e637e27d2c80c4b09ab8ecb419e00bb108d3b80
+      LICENSE[0]=BSD
+         ENTERED=20070518
+        KEYWORDS="xfce"
+           SHORT='XFCE4 CPU Frequency Panel Plugin'
+cat << EOF
+The CpuFreq Plugin shows in the Xfce Panel the following, chooseable
+informations:
+    * current CPU frequency
+    * current used governor
+In a seperate dialog it provides you following informations of all available
+informations:
+    * all available CPU frequencies
+    * all available governors
+    * used driver for the cpu
+EOF

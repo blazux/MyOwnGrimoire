@@ -1,0 +1,16 @@
+           SPELL=xfce4-eyes-plugin
+         VERSION=4.5.1
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=http://xfce-goodies.berlios.de
+SOURCE_HASH=sha512:1de072b03720772adb41e6a6d0a72e8c6524c7c5e299c951d89739b7de3876582e8acf31f4896191d796c34f5abd98da37c363b84a1e24addc4fa42e553ba37a
+      LICENSE[0]=BSD
+         ENTERED=20070304
+        KEYWORDS="xfce"
+           SHORT="xfce4 panel plugin that adds eyes that watch you"
+cat << EOF
+Eyes is a xfce4 panel plugin that adds eyes which watch your every step. 
+Scary!
+EOF

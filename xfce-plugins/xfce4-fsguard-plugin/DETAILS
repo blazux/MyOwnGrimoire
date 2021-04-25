@@ -1,0 +1,20 @@
+           SPELL=xfce4-fsguard-plugin
+         VERSION=1.1.2
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-fsguard-plugin/start
+SOURCE_HASH=sha512:ff42f3d92292357f432a69fc401dec474b1eadabbcd7602f4453f7567faaa623d3672664c3a2baa98ea4e522c6a607b5a40327c5fea33b2d8535f15a4d511ebb
+      LICENSE[0]=BSD
+         ENTERED=20031113
+        KEYWORDS="xfce"
+           SHORT="Plugin for the XFce4 panel to show the free disc space"
+cat << EOF
+This is a little XFce Plugin, which checks the free space on the choosen
+mountpoint frequently.
+If free space <= alarm limit it displays a red icon and a warning message.
+If free space >= alarm limit and <= warn limit it displays a yellow icon.
+Otherwise it displays a green icon.
+<Button 1> click starts xffm on the choosen mountpoint.
+EOF

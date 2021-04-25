@@ -1,0 +1,27 @@
+2013-06-18 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 3.4.0
+	  SOURCE matches upstream posted SHA1
+	  SOURCE_URL updated
+	  SOURCE_DIRECTORY uses short VERSION
+
+2007-01-28 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 3.1.
+
+2007-01-23 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 2.0. Updated SOURCE & SOURCE_URL.
+
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
+2006-06-01 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: changes SOURCE and SOURCE_HASH to new tarball, bug #12523
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-11-29 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-01-17 Seth Woolley <seth@tautology.org>
+	* DETAILS, DEPENDS: added 0.3.0 version
+

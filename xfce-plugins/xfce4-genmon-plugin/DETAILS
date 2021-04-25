@@ -1,0 +1,15 @@
+           SPELL=xfce4-genmon-plugin
+         VERSION=4.1.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-genmon-plugin/start
+SOURCE_HASH=sha512:07d203c0d7907d6ebcf3f982dee8d87337a8a7578beb3632944ab177d5866393c382b3096e407b908999c5865a2088ef9305970ae6b93775c6703d866130cec3
+      LICENSE[0]=GPL
+         ENTERED=20050117
+        KEYWORDS="xfce"
+           SHORT="Scriptable monitor plugin for XFce4"
+cat << EOF
+Scriptable monitor plugin for XFce4.
+EOF

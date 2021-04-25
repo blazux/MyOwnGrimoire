@@ -1,0 +1,16 @@
+           SPELL=xfce4-cpugraph-plugin
+         VERSION=1.2.3
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-cpugraph-plugin/start
+SOURCE_HASH=sha512:79d7c5b328e778156c6a35b1f4947732f42aaffb23f05fdc5e1e7668d03149f1a72ca4bf9b835904a93db6b23660cb10118b4d046b1bd2dded38ef382719052e
+      LICENSE[0]=BSD
+         ENTERED=20040712
+        KEYWORDS="cpu graph xfce"
+           SHORT="CPU Graph plugin for the XFce4 panel"
+cat << EOF
+CPU Graph plugin for the XFce4 panel.
+This plugin displays an graph from your latest system load.
+EOF
