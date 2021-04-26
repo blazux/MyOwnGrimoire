@@ -1,19 +1,15 @@
-           SPELL=xfce4-wavelan-plugin
-         VERSION=0.6.2
+           SPELL=xfce4-whiskermenu-plugin
+         VERSION=2.5.3
           BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
-        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-wavelan-plugin/start
-SOURCE_HASH=sha512:90e0d5f2e9add1f177f0f69e537ccdeeaf518a122feb776cb8bce139b9af6ea7d248e758ae381b69041bbdefe2d38f2162d08b25fd246d98c3a028d743892123
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-whiskermenu-plugin/start
+SOURCE_HASH=sha512:b293bfeef07ae07d2b4654de7aee795ec7790b291094dbd2655a271f9ad7c7de739b2d4b8c97aee7db85bcdf116c2f1b1150e1875ec2ba2b8bf0ec9f13561ac5
       LICENSE[0]=BSD
          ENTERED=20040310
         KEYWORDS="xfce"
-           SHORT="WaveLAN plugin for the XFce4 panel."
+           SHORT="A fancy menu replacement for XFCE"
 cat << EOF
-WaveLAN plugin for the XFce4 panel.
-Displays various information about a WaveLAN device:
-* Signal state (tells if a carrier signal was detected)
-* Signal quality (current quality of the carrier signal)
-* Network name (current SSID of the WaveLAN network)
+A fancy menu replacement for XFCE.
 EOF

@@ -1,10 +1,10 @@
 ## MyOwnGrimoire
 
-Some XFCE updates for the Source Mage "test" grimoire. 
+Some XFCE updates for the Source Mage "test" grimoire.
 
 Use at your own risk.
 
-### Some Details : 
+### Some Details :
 
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated
 - notification-daemon-xfce not needed anymore and libsexy won't cast
@@ -23,7 +23,7 @@ Use at your own risk.
 
 ### Plugins
  - thunar-archive-plugin DONE : updated to 0.4.0
- - thunar-dropbox NOT YET : updated to 0.3.1, new SOURCE_URL + clean dependencies + cmake instead of waf, still requires dropbox 
+ - thunar-dropbox NOT YET : updated to 0.3.1, new SOURCE_URL + clean dependencies + cmake instead of waf, still requires dropbox
 	- dropbox runtime done by nautilis dropbox, which require nautilus, which require gnome...
 	- so basically thunar-dropbox plugin = cast gnome, need to sort this ...
  - thunar-media-tags-plugins DONE : updated to 0.3.0
@@ -32,7 +32,7 @@ Use at your own risk.
  - thunar-volman DONE : updated to 4.16.0
  - verve-plugin DONE : renamed to xfce4-verve-plugin for consistancy, updated to 2.0.1
  - xfce4-battery-plugin DONE : updated tp 1.1.4, can't test it unfortunately
- - xfce4-cddrive-plugin REMOVED 
+ - xfce4-cddrive-plugin REMOVED
  - xfce4-cellmodem-plugin REMOVED
  - xfce4-clipman-plugin DONE : updated to 1.6.1
  - xfce4-cpufreq-plugin DONE : updated to 1.2.5
@@ -48,7 +48,7 @@ Use at your own risk.
  - xfce4-mpc-plugin DONE : updated to 0.5.2
  - xfce4-netload-plugin DONE : updated to 1.4.0
  - xfce4-notes-plugin DONE : updated to 1.9.0
- - xfce4-palces-plugin DONE : updated to 1.8.1, updated dependencies (thunar-vfs removed)
+ - xfce4-places-plugin DONE : updated to 1.8.1, updated dependencies (thunar-vfs removed)
  - xfce4-quicklauncher-plugin REMOVED
  - xfce4-screenshooter-plugin REMOVED
  - xfce4-sensors-plugin DONE : updated to 1.3.95, I don't have what it takes to test it
@@ -62,4 +62,3 @@ Use at your own risk.
 
 ### SPELL ADDED :
  - xfce4-notifyd : notification service
-
