@@ -1,0 +1,15 @@
+           SPELL=xfce4-notifyd
+         VERSION=4.16.0
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+        WEB_SITE=https://docs.xfce.org/apps/notifyd/start
+     SOURCE_HASH=sha512:13fdbcd5031ad44a89327eb65356a4d2c45315e0c8c507e457eee4cc95898794679163de9603a2059d9aaf20d62df317f8a09e0353f6adb526970a21d580b325
+      LICENSE[0]=GPL
+         ENTERED=20210426
+        KEYWORDS="xfce"
+           SHORT="notification service for the Xfce desktop environment"
+cat << EOF
+Xfce4-notifyd is a notification service for the Xfce Desktop that implements most of the “server-side” portion of the Freedesktop desktop notifications specification.
+EOF

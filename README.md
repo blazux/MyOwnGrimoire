@@ -59,3 +59,7 @@ Use at your own risk.
  - xfce4-xkb-plugin DONE : updated to 0.8.2
 	- require liblzma.la to compile, hence the modified xz-utils spell
 
+
+### SPELL ADDED :
+ - xfce4-notifyd : notification service
+
