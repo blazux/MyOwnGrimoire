@@ -48,3 +48,14 @@ Use at your own risk.
  - xfce4-mpc-plugin DONE : updated to 0.5.2
  - xfce4-netload-plugin DONE : updated to 1.4.0
  - xfce4-notes-plugin DONE : updated to 1.9.0
+ - xfce4-palces-plugin DONE : updated to 1.8.1, updated dependencies (thunar-vfs removed)
+ - xfce4-quicklauncher-plugin REMOVED
+ - xfce4-screenshooter-plugin REMOVED
+ - xfce4-sensors-plugin DONE : updated to 1.3.95, I don't have what it takes to test it
+ - xfce4-smartbookmark-plugin DONE : updated to 0.5.2
+ - xfce4-systemload-plugin DONE : updated to 1.3.1
+ - xfce4-wavelan-plugin DONE : updated to 0.6.2
+ - xfce4-weather-plugin NOT FINISHED : updated to 0.11.0 but can't update location, don't know why
+ - xfce4-xkb-plugin DONE : updated to 0.8.2
+	- require liblzma.la to compile, hence the modified xz-utils spell
+

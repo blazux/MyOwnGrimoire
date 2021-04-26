@@ -1,0 +1,15 @@
+           SPELL=xfce4-sensors-plugin
+         VERSION=1.3.95
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-sensors-plugin/start
+SOURCE_HASH=sha512:265dec06bcd7a609b992e70273e8b11fdbaec41b0eb4dcb1b390e315b924743b3833b65fe2d237bb0b457e61943b97c065b34138216b171d111f5e923602642b
+      LICENSE[0]=GPL
+         ENTERED=20050117
+        KEYWORDS="xfce"
+           SHORT="Hardware sensors plugin for the XFce4"
+cat << EOF
+Hardware sensors plugin for the XFce4.
+EOF

@@ -1,0 +1,27 @@
+2013-06-18 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.5.9
+	  SOURCE matches upstream posted SHA1
+	  SOURCE is now .bz2
+	  SOURCE_URL updated
+
+2007-02-04 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 0.5.4. Updated SOURCE.
+
+2007-01-23 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 0.5.3. Updated SOURCE & SOURCE_URL.
+
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-11-29 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-03-18 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.4.1
+
+2004-03-10 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS, DETAILS, HISTORY: created the spell
+

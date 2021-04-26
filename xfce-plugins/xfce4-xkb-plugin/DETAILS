@@ -1,0 +1,19 @@
+           SPELL=xfce4-xkb-plugin
+         VERSION=0.8.2
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-xkb-plugin/start
+     SOURCE_HASH=sha512:3078c11e1c10195480251c455995e4342c27b06949fc754396824f03bed885f32078f4c1436d86782de031cf4f4f806b530ca53116d4bedb54dda19b68ec7062
+      LICENSE[0]=BSD
+         ENTERED=20040712
+        KEYWORDS="xfce"
+           SHORT="XFce4 XKB Layout Switch panel plugin"
+cat << EOF
+This plugin displays the current keyboard layout, and refreshes when layout
+changes. Also the layout can be switched by simply clicking on the plugin. The
+new version can display the layout as text label and also as an image of the
+corresponding country's flag. If the flag image is unavailable then the plugin
+falls back to displaying text label for that layout.
+EOF

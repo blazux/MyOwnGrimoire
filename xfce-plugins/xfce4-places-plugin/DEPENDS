@@ -1,0 +1,6 @@
+depends  libxfce4util  &&
+depends  libxfce4ui    &&
+depends  exo           &&
+depends  xfconf        &&
+depends  thunar        &&
+depends  xfce4-panel
