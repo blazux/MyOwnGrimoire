@@ -4,8 +4,8 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=http://archive.xfce.org/src/apps/$SPELL/$BRANCH/$SOURCE
      SOURCE_HASH=sha512:1727025bbc056a71475d91505cc141661b011c3944cf4ca4d96b48a9ad7e1b28b8f4b0c856fa789cd2c877c1faa27aa57441e35e06f38fd2b81ddcd3284dc2b6
-SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-        WEB_SITE=http://goodies.xfce.org/projects/applications/ristretto/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=https://docs.xfce.org/apps/ristretto/start
       LICENSE[0]=GPL
         KEYWORDS="xfce graphics"
          ENTERED=20071119

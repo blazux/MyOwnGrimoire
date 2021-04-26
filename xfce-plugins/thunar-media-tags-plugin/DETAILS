@@ -4,17 +4,17 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
    SOURCE_URL[0]=http://archive.xfce.org/src/thunar-plugins/$SPELL/$BRANCH/$SOURCE
-        WEB_SITE=http://goodies.xfce.org/projects/thunar-plugins/thunar-media-tags-plugin
+        WEB_SITE=https://docs.xfce.org/xfce/thunar/media-tags
      SOURCE_HASH=sha512:f7c13acb1d9936676e22fdb2d6c1def5ad651ab104110559817fc51dfad845823de4ba724054a7e99a4af980e62e05db750097c32018effa29cb5f56676d9eaa
       LICENSE[0]=GPL
          ENTERED=20070217
         KEYWORDS="xfce"
            SHORT="provides a media tag based renamer module"
 cat << EOF
-The Thunar Media Tags Plugin provides a media tag based renamer module and 
-an additional page for the file properties dialog of audio files. The 
-renamer allows users to rename multiple media files at once using the 
-tags stored within these files (for example ID3 tags in case of MP3 
-files). The properties page enables users to edit media tags (for 
+The Thunar Media Tags Plugin provides a media tag based renamer module and
+an additional page for the file properties dialog of audio files. The
+renamer allows users to rename multiple media files at once using the
+tags stored within these files (for example ID3 tags in case of MP3
+files). The properties page enables users to edit media tags (for
 example ID3 tags) from within Thunars file properties dialog.
 EOF

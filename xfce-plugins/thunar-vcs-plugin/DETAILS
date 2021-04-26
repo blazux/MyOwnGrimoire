@@ -5,7 +5,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://archive.xfce.org/src/thunar-plugins/$SPELL/$BRANCH/$SOURCE
 SOURCE_HASH=sha512:c33f54caa2f27de6c8f9e5cb8368f7538ea82730f1364ad974b19017a25bc6a398c19dfe861b0d0133db08ee36e4e209c8d824ce07de0c2ae6da830aca9e7e68
-        WEB_SITE=http://goodies.xfce.org/projects/thunar-plugins/thunar-vcs-plugin
+        WEB_SITE=https://docs.xfce.org/xfce/thunar/thunar-vcs-plugin
       LICENSE[0]=GPL
          ENTERED=20130618
         KEYWORDS="xfce"

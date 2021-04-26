@@ -4,7 +4,7 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
    SOURCE_URL[0]=http://archive.xfce.org/src/apps/$SPELL/$BRANCH/$SOURCE
-        WEB_SITE=http://goodies.xfce.org/projects/applications/xfce4-taskmanager
+        WEB_SITE=https://docs.xfce.org/apps/xfce4-taskmanager/start
      SOURCE_HASH=sha512:81074da8bf84a0fa9cecd2ab4d5672cb100e4c58ee66bdbaddcb5f6ac2886f615f4bed281920ed71e84fc94f8cd96577a3634b152d393a26f7cb4f62703d9683
       LICENSE[0]=GPL
          ENTERED=20050318

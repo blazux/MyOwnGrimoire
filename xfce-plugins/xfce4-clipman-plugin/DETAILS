@@ -5,7 +5,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
   SOURCE_HASH[0]=sha512:2a2aa5d7b5d841b11c6d54d4872fc8cbfb83981b2d4678075ff5aa2a4df9ea88de95b837bf3896d7ce5f434827ebb64238e68cca2e17a7104433ed5847d949dd
-        WEB_SITE=http://xfce-goodies.berlios.de
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin/start
       LICENSE[0]=BSD
          ENTERED=20031009
         KEYWORDS="xfce"

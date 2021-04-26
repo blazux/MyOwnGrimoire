@@ -1,11 +1,11 @@
            SPELL=xfmpc
          VERSION=0.3.0
           BRANCH=`echo ${VERSION} | cut -d . -f 1,2`
-          SOURCE=${SPELL}-${VERSION}.tar.bz2
-   SOURCE_URL[0]=http://archive.xfce.org/src/apps/${SPELL}/${BRANCH}/${SOURCE}
+          SOURCE=$SPELL-$VERSION.tar.bz2
+   SOURCE_URL[0]=http://archive.xfce.org/src/apps/$SPELL/$BRANCH/$SOURCE
      SOURCE_HASH=sha512:6e876aca2c2a6764fe97f061c97dc0fa9ce72b7ab6a2597b5f54bdce39789cc73bd038a0ef69b87d826c225efb9c3a2d19aa9ed7872ce7ee9ac5d7bd275444a3
-SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
-        WEB_SITE=http://goodies.xfce.org/projects/applications/xfmpc
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=https://docs.xfce.org/apps/xfmpc/start
       LICENSE[0]=GPL
         KEYWORDS="xfce mpd audio"
          ENTERED=20160701

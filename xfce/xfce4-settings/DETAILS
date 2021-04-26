@@ -5,7 +5,7 @@
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig:"
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
    SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
-        WEB_SITE=http://www.xfce.org/
+        WEB_SITE=https://docs.xfce.org/xfce/xfce4-settings/start
      SOURCE_HASH=sha512:38c06e4d4c0963019c20a3afadb0dc1bde8d1b477bcff2d0253e29beb5e4a8b5ae9d058b544cec6fe2bfc2c1d44f74283c94538eda25436d58db0754f112a238
       LICENSE[0]=GPL
          ENTERED=20090227

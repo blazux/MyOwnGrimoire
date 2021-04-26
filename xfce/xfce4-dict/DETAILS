@@ -4,7 +4,7 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
    SOURCE_URL[0]=http://archive.xfce.org/src/apps/$SPELL/$BRANCH/$SOURCE
-        WEB_SITE=http://goodies.xfce.org/projects/applications/xfce4-dict
+        WEB_SITE=https://docs.xfce.org/apps/xfce4-dict/start
      SOURCE_HASH=sha512:f662b94671f2179cc93010e9ff6ad7f3425cfafeb8d7c635fefb8e816d78273f0135d6c7ff3ed143e5e01985eb4275ac89827d197ed059fbfa79df69b327f253
       LICENSE[0]=BSD
          ENTERED=20080524

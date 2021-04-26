@@ -3,16 +3,16 @@
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://archive.xfce.org/src/thunar-plugins/$SPELL/${VERSION%.*}/$SOURCE
-        WEB_SITE=http://foo-projects.org/~benny/projects/thunar-archive-plugin/
+        WEB_SITE=https://docs.xfce.org/xfce/thunar/archive
      SOURCE_HASH=sha512:6590d8765ac6eab14fae7758e4c47c66b52e79e2e4b01a86d25bd35492590925ca35e4bbade8a9d8f0c73386eaeda6863e2a7a39a2df2904404f7e2bfdd91a44
       LICENSE[0]=GPL
          ENTERED=20070203
         KEYWORDS="xfce"
            SHORT="allows you to create and extract archive files"
 cat << EOF
-The Thunar Archive Plugin allows you to create and extract archive files 
-using the file context menus in the Thunar file manager. For example, to 
-create a new archive, just right click on the files and folders you want 
-to add to the archive, right click on one of the selected files and 
+The Thunar Archive Plugin allows you to create and extract archive files
+using the file context menus in the Thunar file manager. For example, to
+create a new archive, just right click on the files and folders you want
+to add to the archive, right click on one of the selected files and
 select Create Archive... from the context menu.
 EOF
