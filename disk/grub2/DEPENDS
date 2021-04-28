@@ -8,6 +8,11 @@ if [[ "${GRUB2_RELEASE}" != "stable" ]]; then
   depends autoconf
 fi &&
 
+if [[ "${GRUB2_RELEASE}" != "beta" ]]; then
+  depends python
+fi &&
+
+
 optional_depends  lvm \
                   '--enable-device-mapper'   \
                   '--disable-device-mapper'  \
