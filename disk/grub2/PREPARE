@@ -1,0 +1,3 @@
+config_query_list GRUB2_RELEASE "Select whih release to build:" \
+  stable \
+  beta

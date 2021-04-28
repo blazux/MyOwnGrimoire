@@ -63,3 +63,7 @@ Use at your own risk.
 ### SPELL ADDED :
  - xfce4-notifyd : notification service
  - xfce4-whiskermenu-plugin : fancy menu for the xfce panel
+
+
+## Disk :
+ - Updated grub2 beta version to 2.06 

@@ -1,0 +1,35 @@
+           SPELL=grub2
+  STAGED_INSTALL="off"
+      PATCHLEVEL=1
+case "$GRUB2_RELEASE" in
+  beta)
+         VERSION=2.06~rc1
+          SOURCE=grub-$VERSION.tar.xz
+   SOURCE_URL[0]=https://alpha.gnu.org/gnu/grub/$SOURCE
+     SOURCE_HASH=sha512:093890b0af71b0d346afb415dec106681fd9e3f2f5bda14093c060b861d55ee1b50c8fb24afd072d24968ebebedde290f8220b0374cbd2b2e4508dfb00924122
+  ;;
+  stable|*)
+         VERSION=2.04
+          SOURCE=grub-$VERSION.tar.xz
+   SOURCE_URL[0]=${GNU_URL}/grub/$SOURCE
+         SOURCE2=grub-$VERSION.tar.xz.sig
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
+  SOURCE2_IGNORE=signature
+      SOURCE_GPG=gnu.gpg:${SOURCE2}:UPSTREAM_KEY
+  ;;
+esac
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/grub-${VERSION}
+        WEB_SITE=http://www.gnu.org/software/grub/
+         ENTERED=20090808
+      LICENSE[0]=GPL
+           SHORT="GNU GRUB2 bootloader"
+cat << EOF
+Install this package only after you have created, and tested, a rescue disk
+using the 'mkrescue' command.  Failure to do so could result in your system
+becoming unbootable if something goes wrong during installation.
+You have been warned.
+
+GNU GRUB is a Multiboot boot loader.
+It was derived from GRUB, GRand Unified Bootloader, which was originally
+designed and implemented by Erich Stefan Boleyn.
+EOF
