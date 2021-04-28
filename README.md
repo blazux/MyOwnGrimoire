@@ -1,10 +1,10 @@
 ## MyOwnGrimoire
 
-Some XFCE updates for the Source Mage "test" grimoire.
+Some updates for the Source Mage "test" grimoire.
 
 Use at your own risk.
 
-### Some Details :
+### XFCE Details :
 
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated
 - notification-daemon-xfce not needed anymore and libsexy won't cast
@@ -21,7 +21,7 @@ Use at your own risk.
 - xfdiff pretty old and not really worth the struggle
 - updated thunar to 4.16.6
 
-### Plugins
+### XFCE Plugins
  - thunar-archive-plugin DONE : updated to 0.4.0
  - thunar-dropbox NOT YET : updated to 0.3.1, new SOURCE_URL + clean dependencies + cmake instead of waf, still requires dropbox
 	- dropbox runtime done by nautilis dropbox, which require nautilus, which require gnome...
@@ -60,10 +60,10 @@ Use at your own risk.
 	- require liblzma.la to compile, hence the modified xz-utils spell
 
 
-### SPELL ADDED :
+#### XFCE SPELL ADDED :
  - xfce4-notifyd : notification service
  - xfce4-whiskermenu-plugin : fancy menu for the xfce panel
 
 
 ## Disk :
- - Updated grub2 beta version to 2.06 
+ - Updated grub2 beta version to 2.06
