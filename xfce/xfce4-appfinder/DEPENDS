@@ -8,8 +8,3 @@ optional_depends GETTEXT \
                  "--enable-nls" \
                  "--disable-nls" \
                  "for Native Language Support" &&
-
-optional_depends gtk+3 \
-                 "--enable-gtk3" \
-                 "--disable-gtk3" \
-                 "for GTK+ 3 support"

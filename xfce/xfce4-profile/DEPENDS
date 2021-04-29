@@ -6,8 +6,8 @@ runtime_depends xfce4-settings     &&
 runtime_depends xfdesktop          &&
 runtime_depends xfce4-panel        &&
 runtime_depends xfwm4              &&
-runtime_depends xfce-utils         &&
 runtime_depends xfce4-session      &&
+runtime_depends xfce4-notifyd     &&
 runtime_depends hicolor-icon-theme &&
 
 suggest_depends mousepad "" "" \

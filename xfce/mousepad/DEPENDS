@@ -1,6 +1,6 @@
 depends glib2 &&
 depends gtk+3 &&
-depends gtksourceview
+depends gtksourceview3
 
 optional_depends dbus-glib \
                  "--enable-dbus" \
