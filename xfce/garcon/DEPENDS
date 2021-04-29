@@ -1,5 +1,6 @@
-depends glib2 &&
+depends glib2        &&
 depends libxfce4util &&
+depends libxfce4ui   &&
 optional_depends GETTEXT \
                  "--enable-nls" \
                  "--disable-nls" \

@@ -2,7 +2,6 @@
          VERSION=4.17.1
           BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:"
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
    SOURCE_URL[0]=https://archive.xfce.org/src/xfce/$SPELL/$BRANCH/$SOURCE
         WEB_SITE=http://thunar.xfce.org/
