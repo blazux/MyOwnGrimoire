@@ -1,4 +1,5 @@
 depends  xfce4-panel  &&
 depends  libxklavier  &&
 depends  libwnck3     &&
+depends  librsvg2     &&
 depends  xz-utils

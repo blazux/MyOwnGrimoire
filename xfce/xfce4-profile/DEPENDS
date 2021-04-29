@@ -13,9 +13,6 @@ runtime_depends hicolor-icon-theme &&
 suggest_depends mousepad "" "" \
                 "for a text editor" &&
 
-suggest_depends orage "" "" \
-                "for a calendar application" &&
-
 suggest_depends xfce4-terminal "" "" \
                 "for xfce terminal" &&
 

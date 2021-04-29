@@ -21,6 +21,9 @@ Use at your own risk.
 - xfdiff pretty old and not really worth the struggle
 - updated thunar to 4.16.6
 
+- xfce4-terminal had vte dependency
+	- vte added with dependency fix (pcre2 was missing)
+
 ### XFCE Plugins
  - thunar-archive-plugin DONE : updated to 0.4.0
  - thunar-dropbox NOT YET : updated to 0.3.1, new SOURCE_URL + clean dependencies + cmake instead of waf, still requires dropbox
@@ -67,3 +70,4 @@ Use at your own risk.
 
 ## Disk :
  - Updated grub2 beta version to 2.06
+

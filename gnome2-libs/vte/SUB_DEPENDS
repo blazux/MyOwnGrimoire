@@ -1,0 +1,5 @@
+case $THIS_SUB_DEPENDS in
+       *) echo "unknown sub-depends!"
+          return 1
+          ;;
+esac

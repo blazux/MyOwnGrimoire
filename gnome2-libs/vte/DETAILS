@@ -1,0 +1,17 @@
+. "$GRIMOIRE"/MESON_FUNCTIONS
+           SPELL=vte
+         VERSION=0.64.0
+  SECURITY_PATCH=1
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]="https://gitlab.gnome.org/GNOME/$SPELL/-/archive/$VERSION/$SOURCE"
+     SOURCE_HASH=sha512:114f600b9708b1b08b1e2d995042ecceb43fe153cb35487bff5bd725a9c184a894b375f16fcc789958956504365e4e74e54d1cdc75a89054b4a622860cb7ab7d
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.gnome.org/
+         ENTERED=20020314
+        KEYWORDS="emulator terminal gnome2 libs"
+           SHORT="Terminal emulator widget for GTK+2"
+cat << EOF
+VTE is a terminal emulator widget for GTK+2 that uses termcap to
+determine how to behave.
+EOF
