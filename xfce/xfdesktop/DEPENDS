@@ -1,4 +1,4 @@
-depends gtk+2 &&
+depends gtk+3 &&
 depends libwnck &&
 depends libxfce4util &&
 depends libxfce4ui &&

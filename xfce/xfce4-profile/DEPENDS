@@ -1,0 +1,47 @@
+runtime_depends libxml2            &&
+runtime_depends libxfce4util       &&
+runtime_depends X11-SERVER         &&
+runtime_depends xfconf             &&
+runtime_depends xfce4-settings     &&
+runtime_depends xfdesktop          &&
+runtime_depends xfce4-panel        &&
+runtime_depends xfwm4              &&
+runtime_depends xfce-utils         &&
+runtime_depends xfce4-session      &&
+runtime_depends hicolor-icon-theme &&
+
+suggest_depends mousepad "" "" \
+                "for a text editor" &&
+
+suggest_depends orage "" "" \
+                "for a calendar application" &&
+
+suggest_depends xfce4-terminal "" "" \
+                "for xfce terminal" &&
+
+suggest_depends thunar "" "" \
+                "for xfce file manager" &&
+
+suggest_depends xarchiver "" "" \
+                "for a graphical archiver" &&
+
+suggest_depends xfce4-appfinder "" "" \
+                "for menu generation of apps that don't add themselves" &&
+
+suggest_depends xfce4-artwork "" "" \
+                "for additional backgrounds" &&
+
+suggest_depends xfce4-battery-plugin "" "" \
+                "for a battery monitor panel plugin" &&
+
+suggest_depends xfce4-screenshooter-plugin "" "" \
+                "for desktop screenshot plugin" &&
+
+suggest_depends xfce4-datetime-plugin "" "" \
+                "for a date/time and calendar panel plugin" &&
+
+suggest_depends xfce4-xkb-plugin "" "" \
+                "for a keyboard layout switcher/display" &&
+
+suggest_depends ristretto "" "" \
+                "for a lightweight image viewer"
