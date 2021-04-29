@@ -10,5 +10,7 @@ LDFLAGS=${LDFLAGS%-s} &&
 LDFLAGS=${LDFLAGS//-Wl,-fuse-ld=gold/} &&
 LDFLAGS+=" -Wl,-fuse-ld=bfd" &&
 
-disable_pic force &&
+if [[ "${GRUB2_RELEASE}" != "beta" ]]; then
+	disable_pic force
+fi &&
 default_build
