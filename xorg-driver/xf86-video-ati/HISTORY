@@ -1,0 +1,306 @@
+2019-10-15 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 19.1.0
+
+2019-04-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: use DEVICE-MANAGER
+
+2019-03-19 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 19.0.1
+	* PRE_BUILD DEPENDS patches/*: support meson build
+	  this give much faster builds I have used it for several months
+
+2019-03-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 19.0.0
+
+2018-09-15 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 18.1.0
+
+2018-03-15 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 18.0.1
+
+2018-03-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 18.0.0
+
+2018-02-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: use xorgproto
+
+2017-09-18 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: tweak
+
+2017-09-08 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 7.10.0
+
+2017-03-16 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 7.9.0
+
+2016-11-17 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 7.8.0
+	* DETAILS: add gpg checking
+
+2016-09-15 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.7.1
+
+2015-04-07 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.7.0
+
+2015-11-12 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.6.1
+
+2015-05-28 Pavel Vinogradov <public@sourcemage.org>
+	* DEPENDS: UDEV -> DEVICE-MANAGER
+
+2014-10-02 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.5.0
+	* DEPENDS: remove duplicate
+	  add libpciaccess
+
+2014-09-27 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: simplified mesalib with DRI request, removed merge
+	  marks crap
+
+2014-09-25  Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: MESALIB => mesalib
+
+2014-09-25 Remko van der Vossen <wich@sourcemage.org>
+	* DEPENDS: added missing dependencies
+
+2014-07-17 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: glamor now comes from xorg-server
+
+2014-07-03 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: Use get_scm_version
+
+2014-06-26 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.4.0
+	* DEPENDS: all versions need glamor
+
+2014-05-23 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: SCM branch depends on glamor
+	* DEPENDS, DETAILS, PREPARE, PRE_BUILD: Use prepare_select_branch
+
+2014-04-14  Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: mesalib => MESALIB
+
+2014-01-24 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.3.0
+	* DEPENDS: all version can use glamor
+
+2013-09-22 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: git version optionally depends on glamor
+
+2013-08-07 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 7.2.0
+
+2013-07-27 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: udev => UDEV
+
+2013-02-25 Ismael Luceno <ismael.luceno@gmail.com>
+	* PRE_BUILD: Fix call to autogen.sh
+
+2013-01-03 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 7.0.0 for xorg-server 1.13+
+	* DEPENDS: Optionally depends on udev
+	  Requires mesalib (DRI is no longer optional)
+
+2012-06-30 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.14.6
+
+2012-06-08 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.14.5
+
+2012-03-29 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.14.4
+	* PRE_BUILD: do not apply patch
+	* radeon_dri2-bug45937.patch: deleted
+
+2012-03-06 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Apply radeon_dri2-bug45937.patch
+	* radeon_dri2-bug45937: Fix compilation with xorg-server 1.12.x
+
+2011-11-03 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.14.3
+
+2011-05-26 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.14.2
+
+2011-03-18 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.14.1
+
+2011-02-04 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 6.14.0
+
+2010-09-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS version 6.13.2
+
+2010-09-10 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.13.1
+	  SOURCE matches upstream posted SHA1
+
+2010-04-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.12.7
+	  SOURCE matches upstream posted SHA1
+	* DEPENDS: Depends on non-stable mesalib
+
+2010-03-03 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.12.192
+	  SOURCE matches upstream posted SHA1
+
+2010-03-24 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.12.6
+
+2010-03-03 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.12.191
+	  SOURCE matches upstream posted SHA1
+	* DEPENDS: Depends on libdrm built with Radeon KMS API
+
+2010-03-02 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.12.5
+	  SOURCE matches upstream posted SHA1
+
+2009-11-29 Vasil Yonkov <spirtbrat@sourcemage.org>
+	* PREPARE: fixed query
+
+2009-09-15 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: New version depends on xineramaproto
+
+2009-09-11 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated stable to 6.12.4
+	  6.12.4 SOURCE matches upstream posted MD5
+	  Updated stable to 6.12.3
+	  6.12.3 SOURCE matches upstream posted MD5
+	  Removed XORG_VER
+
+2009-04-19 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
+	* DETAILS: improve the overall SCM version
+
+2009-04-19 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: optionally change SOURCE_DIRECTORY so auto updating works again.
+
+2009-04-15 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 6.12.2
+
+2009-03-21 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 6.12.1,
+	  SOURCE_URL back to normal
+
+2009-03-17 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.12.0
+	  MD5 matches upstream published MD5
+	  SOURCE_URL: release -> archive
+	  Define SOURCE before using it in SOURCE_URL for stable release
+
+2009-03-11 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: added git when building the scm version
+
+2009-03-04 Arjan Bouter <abouter@sourcemage.org>
+	* PREPARE,PRE_BUILD: added for optional SCM version.
+	* DETAILS: added SCM version, removed PKG var,
+	  removed unused source hash
+
+2009-02-25 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6.11.0
+	  MD5 matches upstream published MD5
+
+2009-01-06 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated to version 6.10.0
+
+2008-06-28 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 6.9.0, fixed long description as it no longer
+	  supports Mach64 and R128 chips
+	* BUILD: removed, it's useless
+	* DEPENDS: removed nonexistant is_depends_enabled.function sourcing
+
+2008-03-17 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Auto-conflicts with xorg as well
+
+2008-03-16 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Auto-conflicts with all prior monolithic X providers
+
+2008-02-26 Andraž ruskie Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 6.8.0
+
+2007-08-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 6.6.193
+
+2007-07-14 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated description
+
+2007-05-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update 6.6.192
+
+2007-04-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: version update
+
+2007-01-06 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: added subdepends on mesalib with DRI
+
+2006-10-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 6.6.3
+
+2006-09-10 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update to 6.6.2
+
+2006-05-23 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: update for xorg 7.1
+
+2006-03-30 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: mesalib optional
+	* CONFIGURE: removed
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org> 
+	* DEPENDS, CONFIGURE: (auto) config_query_option -> optional_depends 
+
+2006-03-06 Karsten Behrmann <BearPerson@sourcemage.org>
+	* BUILD: (automated) remove unneeded old opts
+
+2006-03-05 Karsten Behrmann <BearPerson@sourcemage.org>
+	* CONFIGURE, BUILD: (automated) unify config_query_option variable name
+
+2006-02-11 Robin Cook <rcook@wyrms.net>
+	* BUILD: file added
+
+2006-01-07 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: corrected mesalib
+
+2006-01-01 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: corrected typo
+
+2005-12-22 Robin Cook <rcook@wyrms.net>
+	* DETAILS: Updated VERSION to 6.5.7.3
+	  added XORG_VER
+	  updated SOURCE, SOURCE_URL, and SOURCE_DIRECTORY
+
+2005-12-21 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: only depends libmesa if --enable-dri
+
+2005-12-17 Robin Cook <rcook@wyrms.net>
+	* CONFIGURE: reformated as kept failing even after adding missing quote
+	* DETAILS: corrected version to 6.5.7.2
+	* DEPENDS: added mesalib as depends
+
+2005-12-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: Updated VERSION to 6.5.7.4
+	  converted SOURCEHASH to SOURCE_GPG
+
+2005-12-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: Updated SOURCE_URL to RC4
+
+2005-12-15 Robin Cook <rcook@wyrms.net>
+	* DETAILS: Updated VERSION to 6.5.7.1
+	  converted SOURCEHASH to SOURCE_GPG
+
+2005-12-14 Robin Cook <rcook@wyrms.net>
+	* DETAILS: Updated SOURCE_URL
+
+2005-11-27 Karsten Behrmann <BearPerson@sourcemage.org>
+	* CONFIGURE: turn - into _ in option names
+
+2005-11-26 Benjamin "Asaru" Dirks <asaru@wtnet.de>
+	* CONFIGURE: added PIC and DRI configure options
+
+2005-11-25 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DEPENDS: auto-created or updated
+
+2005-11-25 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS, HISTORY: created spell
+

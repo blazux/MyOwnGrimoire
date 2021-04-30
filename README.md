@@ -71,3 +71,5 @@ Use at your own risk.
 ## Disk :
  - Updated grub2 beta version to 2.06
 
+## Xorg-driver :
+ - Updated xf86-video-ati with patch for gcc-10+

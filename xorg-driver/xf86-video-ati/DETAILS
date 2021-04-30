@@ -1,0 +1,33 @@
+. "$GRIMOIRE/FUNCTIONS"
+. "$GRIMOIRE/MESONFUNCTIONS"
+           SPELL=xf86-video-ati
+if [[ $XF86_VIDEO_ATI_BRANCH == scm ]]; then
+         VERSION=$(get_scm_version)
+  FORCE_DOWNLOAD=on
+          SOURCE=$SPELL-scm.tar.bz2
+   SOURCE_URL[0]="git://anongit.freedesktop.org/git/xorg/driver/$SPELL:$SPELL-scm"
+   SOURCE_IGNORE=volatile
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-scm
+else
+         VERSION=19.1.0
+          SOURCE=${SPELL}-${VERSION}.tar.bz2
+   SOURCE_URL[0]=https://xorg.freedesktop.org/releases/individual/driver/${SOURCE}
+         SOURCE2=$SOURCE.sig
+  SOURCE2_URL[0]=${SOURCE_URL[0]}.sig
+      SOURCE_GPG=xorg.gpg:$SOURCE.sig:UPSTREAM_KEY
+  SOURCE2_IGNORE=signature
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+fi
+        WEB_SITE=http://xorg.freedesktop.org
+         ENTERED=20051125
+      LICENSE[0]=XCL
+           SHORT="ati is an Xorg wrapper driver for ATI video cards."
+cat << EOF
+ati is an Xorg wrapper driver for ATI video cards. It autodetects
+whether your hardware has a Radeon or earlier class of chipset, and
+loads the radeon(4), r128(4), or atimisc(4) driver as appropriate.
+
+SUPPORTED HARDWARE
+The ati driver supports Radeon and earlier chipsets by loading those
+drivers. See those manpages for specific cards supported.
+EOF
