@@ -73,3 +73,7 @@ Use at your own risk.
 
 ## Xorg-driver :
  - Updated xf86-video-ati with patch for gcc-10+
+
+## Gnome2-libs :
+ - sorting dependency problem on vte (needed by xfce4-terminal)
+ - updated gsettings-desktop-schemas for testing purpose

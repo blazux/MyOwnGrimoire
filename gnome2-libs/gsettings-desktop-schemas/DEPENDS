@@ -1,0 +1,3 @@
+depends gobject-introspection &&
+depends meson &&
+depends perl
