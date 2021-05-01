@@ -1,8 +1,9 @@
 ## MyOwnGrimoire
 
-Some updates for the Source Mage "test" grimoire.
+Some updates for the Source Mage "test" grimoire available here : [https://github.com/sourcemage/grimoire](https://github.com/sourcemage/grimoire)
 
-Use at your own risk.
+
+Still a work in progress, use at your own risk.
 
 ### XFCE Details :
 
