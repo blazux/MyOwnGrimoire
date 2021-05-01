@@ -7,4 +7,4 @@ depends garcon &&
 optional_depends GETTEXT \
                  "--enable-nls" \
                  "--disable-nls" \
-                 "for Native Language Support" &&
+                 "for Native Language Support"

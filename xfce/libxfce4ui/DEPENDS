@@ -29,4 +29,4 @@ optional_depends startup-notification \
 optional_depends gtk-doc \
                  "--enable-gtk-doc" \
                  "--disable-gtk-doc" \
-                 "use gtk-doc to build documentation" &&
+                 "use gtk-doc to build documentation"
