@@ -1,0 +1,18 @@
+depends autoconf &&
+depends pkgconfig &&
+depends libtool &&
+
+optional_depends alsa-lib \
+                 "--enable-alsa" \
+                 "--disable-alsa" \
+                 "for ALSA driver support" &&
+
+if list_find "$LIBSNDFILE_OPTS" "--enable-external-libs"; then
+  depends libvorbis &&
+  depends flac
+fi &&
+
+optional_depends sqlite \
+                 "--enable-sqlite" \
+                 "--disable-sqlite" \
+                 "for SQLite database support"

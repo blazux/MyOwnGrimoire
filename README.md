@@ -5,7 +5,23 @@ Some updates for the Source Mage "test" grimoire available here : [https://githu
 
 Still a work in progress, use at your own risk.
 
-### XFCE Details :
+## Disk :
+ - Updated grub2 beta version to 2.06
+
+## Xorg-driver :
+ - Updated xf86-video-ati with patch for gcc-10+
+
+## Gnome2-libs :
+ - sorting dependency problem on vte (needed by xfce4-terminal)
+ - updated gsettings-desktop-schemas for testing purpose
+
+## Audio-drivers :
+ - pulseaudio updated to 14.2
+
+## Audio-libs :
+ - libsndfile updated to 1.0.31
+
+## XFCE Details :
 
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated
 - notification-daemon-xfce not needed anymore and libsexy won't cast
@@ -67,14 +83,3 @@ Still a work in progress, use at your own risk.
 #### XFCE SPELL ADDED :
  - xfce4-notifyd : notification service
  - xfce4-whiskermenu-plugin : fancy menu for the xfce panel
-
-
-## Disk :
- - Updated grub2 beta version to 2.06
-
-## Xorg-driver :
- - Updated xf86-video-ati with patch for gcc-10+
-
-## Gnome2-libs :
- - sorting dependency problem on vte (needed by xfce4-terminal)
- - updated gsettings-desktop-schemas for testing purpose

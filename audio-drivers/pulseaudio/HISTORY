@@ -1,0 +1,182 @@
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2019-04-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: use DEVICE-MANAGER
+
+2019-04-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: updated speex flags, correct dependency is speexdsp; added
+	  webrtc-audio-processing optional dependency
+	* CONFIGURE: revamped; added Adrian AEC flags
+	* BUILD: use PULSEAUDIO_OPTS
+
+2019-04-10 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 12.2
+
+2018-02-26 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 11.1
+	* DEPENDS: multiple changes
+
+2015-12-25 Ismael Luceno <ismael@sourcemage.org>
+	* CONFLICTS: Conflicts with apulse
+	* PROVIDES: Provides LIBPULSE
+
+2015-04-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 6.0
+	* DEPENDS: add bluez5
+
+2015-02-11 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: UDEV -> DEVICE-MANAGER
+
+2014-08-19 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: openssl => SSL
+
+2014-06-09 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: 5.0
+	* DEPENDS: fix UDEV, gtk+2 => gtk+3, add fftw, remove hal, add orc
+	  gettedxt is nneded in order to build .desktop files
+	* PRE_BUILD: remove Werror flag from configure
+
+2014-01-13 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 4.0
+
+2013-09-06 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Replaced xorg-libs with libx11, libice, libsm, libxext, libxtst
+	  gtk+2 support also needs libxxf86vm
+
+2013-07-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DEPENDS: udev => UDEV
+
+2013-02-15 Sukneet Basuta <sukneet@sourcemage.org>
+	* DEPENDS: suggest_depends padevchooser->pasystray
+
+2013-02-14 Sukneet Basuta <sukneet@sourcemage.org>
+	* DEPENDS: if bluez enabled depend on sbc and dbus 
+
+2012-12-22 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0
+
+2012-08-30 Tommy Boatman <tboatman@sourcemage.org>
+	* [PRE_]SUB_DEPENDS: add glib2 to force Gnome support
+	  Fixes issue #400
+
+2012-05-31 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 2.0
+
+2011-12-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.1
+	* DEPENDS: json-c added
+	* UP_TRIGGERS: added
+
+2011-09-19 Arjan Bouter <abouter@sourcemage.org>
+	* CONFIGURE: corrected oss options and added ipv6 switches
+	* DEPENDS: disabled polkit, no longer supported by configure.
+	  Re-ordered all deps like configure for easy checking.
+	  Added optional deps for gtk+2, gconf2, bluez, openssl, paman and
+	  doxygen.
+	  Added configuration database selection.
+	* BUILD: added ipv6 and database options to OPTS
+
+2011-07-13 Arjan Bouter <abouter@sourcemage.org>
+	* DEPENDS: switched the udev sub_depends from extras to hwdb.
+
+2011-06-24 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.23, SOURCE_URL updated
+
+2010-11-26 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 0.9.22
+
+2010-10-05 Eric Sandall <sandalle@sourcemage.org>
+	* BUILD: Fails to compile with -Wl,--as-needed in LDFLAGS
+	  Fixes Bug #15307
+	* DEPENDS: Depends on libxtst when building X11 support
+	  Fixes Bug #15741
+
+2010-10-04 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Clarify what some optional depends are for
+
+2010-01-07 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: PATCHLEVEL++ to guarantee udev is built correctly for it
+
+2010-01-07 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: needs udev with EXTRAS, otherwise doesn't find any sound
+	  cards
+
+2009-11-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.21
+
+2009-11-11 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.9.20
+
+2009-10-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.19
+
+2009-09-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.18
+
+2009-09-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.17
+
+2009-09-10 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.16
+
+2009-08-23 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Suggested depends on PulseAudio tools:
+	  pavucontrol, pavumeter, paprefs, paman, and padevchooser
+	  Fix flags for enabling/disabling X11 support
+	  Optionally depend on avahi for ZeroConf support
+	  Optionally depends on udev
+	  Optionally depends on dbus
+	  Optionally depends on gettext
+	* SUB_DEPENDS, PRE_SUB_DEPENDS: Allow forcing ZeroConf (avahi)
+	  Also include REPAIR^none^ files for the above
+
+2009-04-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.15
+
+2009-01-13 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.14
+
+2008-11-27 Treeve Jelbert <treeve@sourcemage.org>
+	* BUILD, CONFIGURE: added - for optional OSS support
+	* INSTALL: added, fix bug #14915
+
+2008-10-31 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Optionally depends on policykit
+	* PRE_BUILD: Setup pulse accounts
+
+2008-10-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.13
+
+2008-10-02 Pieter Lenaerts <e-type@sourcemage.org>
+	* DEPENDS: depends gdbm and speex
+
+2008-09-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.12
+	* PRE_BUILD: removed, fixed
+
+2008-03-31 Robert Figura <template@sourcemage.org>
+	* DETAILS: updated to 0.9.10
+
+2008-03-18 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Switch X11-LIBS to the one and only xorg-libs
+
+2008-03-04 Juuso Alasuutari <iuso@sourcemage.org>
+	* DEPENDS: Changed optional_depends jack to JACK-DRIVER.
+
+2008-02-19 Thomas Orgis <sobukus@orgis.org>
+	* PRE_BUILD: fix Makefile for dbus-without-hal build
+
+2007-11-25 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.9.8
+
+2007-11-01 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.9.7
+
+2007-10-16 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.9.6
+	* DEPENDS: added libatomic_ops
+
+2007-05-04 Pieter Lenaerts <e-type@sourcemage.org>
+	* DETAILS, DEPENDS, HISTORY: created spell
+

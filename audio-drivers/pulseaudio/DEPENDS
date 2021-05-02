@@ -1,0 +1,136 @@
+if [[ "$PULSE_DB" == 'gdbm' ]]; then
+   depends gdbm
+elif [[ "$PULSE_DB" == 'tdb' ]]; then
+   depends tdb
+else
+   message "using configuration database $PULSE_DB"
+fi &&
+
+# gettext is needed in order to build the desktop files
+depends GETTEXT   &&
+#optional_depends GETTEXT                        \
+#                 "--enable-nls"                 \
+#                 "--disable-nls"                \
+#                 "for Native Language Support"  &&
+optional_depends libx11                           \
+                 "--enable-x11"                   \
+                 "--disable-x11"                  \
+                 "Enable X11 support?"            &&
+
+if is_depends_enabled $SPELL libx11; then
+  depends  libice   &&
+  depends  libsm    &&
+  depends  libxext  &&
+  depends  libxtst
+fi  &&
+optional_depends alsa-lib                         \
+                 "--enable-alsa"                  \
+                 "--disable-alsa"                 \
+                 "Enable Advanced Linux Sound Architecture support? (RECOMMENDED)"  &&
+optional_depends glib2                            \
+                 "--enable-glib2"                 \
+                 "--disable-glib2"                \
+                 "Enable glib2 support?"          &&
+optional_depends gtk+3 \
+                 "--enable-gtk3" \
+                 "--disable-gtk3" \
+                 "for GTK+3 support" &&
+
+if is_depends_enabled $SPELL gtk+3; then
+  depends  libxxf86vm
+fi  &&
+
+optional_depends gconf2 \
+                 "--enable-gconf" \
+                 "--disable-gconf" \
+                 "for gconf support" &&
+optional_depends avahi                                \
+                 "--enable-avahi"                     \
+                 "--disable-avahi"                    \
+                 "for ZerConf configuration support"  &&
+optional_depends JACK-DRIVER                      \
+                 "--enable-jack"                  \
+                 "--disable-jack"                 \
+                 "for low-latency sound server support?"  &&
+optional_depends libasyncns                       \
+                 "--enable-asyncns"               \
+                 "--disable-asyncns"              \
+                 "for asynchronous service queries?"  &&
+optional_depends tcp_wrappers                     \
+                 "--enable-tcpwrap"               \
+                 "--disable-tcpwrap"              \
+                 "Enable TCP network filtering?"  &&
+optional_depends lirc                             \
+                 "--enable-lirc"                  \
+                 "--disable-lirc"                 \
+                 "Enable infra-red remote control support?"  &&
+optional_depends DEVICE-MANAGER                \
+                 "--enable-udev --disable-hal-compat" \
+                 "--disable-udev"              \
+                 "for device hotplug support"  &&
+optional_depends bluez5 \
+                 "--enable-bluez5" \
+                 "--disable-bluez5" \
+                 "for BlueZ-5 support" &&
+optional_depends bluez \
+                 "--enable-bluez4" \
+                 "--disable-bluez4" \
+                 "for BlueZ-4 support" &&
+
+if is_depends_enabled $SPELL bluez ||
+   is_depends_enabled $SPELL bluez5; then
+  depends sbc &&
+  depends dbus "--enable-dbus"
+else
+  optional_depends dbus                        \
+                   "--enable-dbus"             \
+                   "--disable-dbus"            \
+                   "for D-BUS system messaging" 
+fi &&
+
+optional_depends SSL \
+                 "--enable-openssl" \
+                 "--disable-openssl" \
+                 "for SSL support (Airtunes/RAOP)" &&
+optional_depends doxygen \
+                 "--enable-manpages" \
+                 "--disable-manpages" \
+                 "for manpage generation" &&
+optional_depends libcap                           \
+                 "--with-caps"                    \
+                 "--without-caps"                 \
+                 "Enable POSIX capability support?"          &&
+
+optional_depends fftw \
+                '--with-fftw' \
+                '--without-fftw' \
+                'build equalizer' &&
+
+optional_depends orc \
+                 '--enable-orc' \
+                 '--disable-orc' \
+                 'improve code' &&
+#optional_depends policykit                        \
+#                 "--enable-polkit"                \
+#                 "--disable-polkit"               \
+#                 "for PolicyKit authentication support"  &&
+
+optional_depends speexdsp \
+                 "--with-speex" \
+                 "--without-speex" \
+                 "for resampling support" &&
+
+optional_depends webrtc-audio-processing \
+                 "--enable-webrtc-aec" \
+                 "--disable-webrtc-aec" \
+                 "for WebRTC-based echo canceller" &&
+
+if is_depends_enabled ${SPELL} webrtc-audio-processing; then
+  depends -sub CXX gcc
+fi &&
+
+suggest_depends  pasystray     ''  ''  'for Preferences tool & System Tray' &&
+suggest_depends  paprefs       ''  ''  'for Preferences tool'     &&
+suggest_depends  pavucontrol   ''  ''  'for Volume Control tool'  &&
+suggest_depends  pavumeter     ''  ''  'for Volume Meter tool'    &&
+suggest_depends  paman         ''  ''  'for Manager tool'
