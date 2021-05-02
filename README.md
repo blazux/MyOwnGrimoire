@@ -1,4 +1,4 @@
-## MyOwnGrimoire
+# MyOwnGrimoire
 
 Some updates for the Source Mage "test" grimoire available here : [https://github.com/sourcemage/grimoire](https://github.com/sourcemage/grimoire)
 
