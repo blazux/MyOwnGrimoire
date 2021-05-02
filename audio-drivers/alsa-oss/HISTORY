@@ -1,0 +1,70 @@
+2014-07-03 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: Use get_scm_version
+
+2012-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 1.0.25
+
+2011-09-26 Ismael Luceno <ismael@sourcemage.org>
+	* BUILD, DEPENDS, DETAILS, PREPARE: Use prepare_select_branch
+
+2009-10-11 Ethan Grammatikidis <eekee57@fastmail.fm>
+	* DETAILS: trimmed SHORT, pruned long
+
+2008-07-15 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.17
+	* BUILD, DEPENDS: added fixes for scm branch
+
+2008-06-08 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS, PREPARE: added direct scm branch
+
+2007-10-17 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.15
+
+2007-06-12 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.14
+
+2007-05-06 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.14rc4
+
+2006-10-06 Juuso Alasuutari <iuso@sourcemage.org>
+	* profile.d/alsa-oss.sh: Removed bashisms.
+
+2006-08-31 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.12, removed PATCHLEVEL
+
+2006-08-24 Chris Dombroski <cdombroski@icanttype.org>
+	* DEPENDS: Added alsa-lib as a dependency #11253
+
+2006-07-20 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: BUILD_API=2, UPDATED removed
+
+2006-04-19 Unet <unet@sourcemage.org>
+	* DETAILS: 1.0.11
+
+2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
+	* profile.d/: Added
+	* alsa-oss: Moved to profile.d/
+	* alsa-oss.sh: Moved to profile.d/
+	* INSTALL: Edited to install configs from 
+	  $SCRIPT_DIRECTORY/profile.d/
+
+2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
+	* alsa-oss: Added, sysconfig file with variable to set aoss 
+	  wrapper use for programs which have launch scripts for it
+	* alsa-oss.sh: Added, profile.d file to source above config
+	* INSTALL: Added, install above files
+	* DETAILS: PATCHLEVEL
+
+2006-03-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.11rc3
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-11-18 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 1.0.10
+
+2004-10-26 Bearcat M. Sandor <Sorcerer@TheDragonsEdge.com>
+	* DETAILS: Created
+	* HISTORY: Created
+

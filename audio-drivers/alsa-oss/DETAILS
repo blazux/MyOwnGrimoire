@@ -1,0 +1,27 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=alsa-oss
+if [[ $ALSA_OSS_BRANCH == scm ]]; then
+         VERSION=$(get_scm_version)
+          SOURCE=$SPELL-git.tar.bz2
+   SOURCE_URL[0]=git://git.alsa-project.org/alsa-oss.git:alsa-oss-git
+   SOURCE_IGNORE=volatile
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-git
+  FORCE_DOWNLOAD=1
+else
+         VERSION=1.1.8
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.alsa-project.org/pub/oss-lib/$SOURCE
+     SOURCE_HASH=sha512:42966af0ca1be33b4ab1e20b2e3320056ad6caf6ecc5ecde3ae19571809a2fa924dd91d9b2a5d5b6f345b29d937b079400d2a165dbe2b8a33b857cd406c4ac7c
+fi
+        WEB_SITE=http://www.alsa-project.org/
+         ENTERED=20041026
+      LICENSE[0]=LGPL
+        KEYWORDS="drivers audio"
+           SHORT="OSS wrapper and utils for the OSS layer in the Advanced Linux Sound Architecture"
+cat << EOF
+This spell installs the preferred method of using ALSA's OSS compatiblity
+layer according to the Alsa development site.  It includes a script called
+'aoss' that acts as a wrapper for programs to utilise the OSS compatabliity
+layer without having to have the modules loaded.
+EOF

@@ -1,0 +1,32 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=alsa-utils
+if [[ $ALSA_UTILS_BRANCH == scm ]]; then
+         VERSION=$(get_scm_version)
+          SOURCE=$SPELL-git.tar.bz2
+   SOURCE_URL[0]=git://git.alsa-project.org/alsa-utils.git:alsa-utils-git
+   SOURCE_IGNORE=volatile
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-git"
+  FORCE_DOWNLOAD=1
+else
+         VERSION=1.2.4
+     SOURCE_HASH=sha512:13080abda55269513b3751044dac292d695e273073a62d74ed4a32c68f448a2b015fe16604650821a6398b6ef6a7b6008cb9f0b7fb7f4ee1fa2b4eb2dcf29770
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=ftp://ftp.alsa-project.org/pub/utils/$SOURCE
+fi
+        WEB_SITE=http://www.alsa-project.org/
+         ENTERED=20010922
+      LICENSE[0]=GPL
+        KEYWORDS="alsa drivers audio"
+           SHORT="ALSA utilities provides some sound programs that use the Advanced Linux Sound Architecture."
+cat << EOF
+ALSA utilities provides these sound programs that use the Advanced Linux Sound
+Architecture API.
+alsamixer - Native, curses-based mixer
+amixer    - Native command-line mixer
+aplay     - Simple, native command-line PCM (wav,au,raw,voc) player
+arecord   - Simple, native command-line PCM recorder
+aconnect  - ALSA sequencer connection manager
+aseqnet   - ALSA sequencer connectors over network
+alsactl   - Saves/restores mixer settings to/from /etc/asound.state
+EOF

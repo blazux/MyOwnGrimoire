@@ -1,0 +1,23 @@
+depends coreutils &&
+depends alsa-lib &&
+depends ncurses '--with-curses=ncurses' &&
+
+optional_depends fftw \
+                 "--enable-bat" \
+                 "--disable-bat" \
+                 "for Basic Audio Tester" &&
+
+optional_depends xmlto \
+                 "--enable-xmlto" \
+                 "--disable-xmlto" \
+                 "for generated documentation" &&
+
+if [[ $ALSA_UTILS_BRANCH == scm ]]; then
+  depends git &&
+  depends libtool &&
+  depends automake &&
+  depends autoconf &&
+  depends GETTEXT
+fi &&
+
+runtime_depends which

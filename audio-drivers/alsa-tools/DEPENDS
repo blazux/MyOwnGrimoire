@@ -1,0 +1,23 @@
+if [[ $ALSA_TOOLS_BRANCH == scm ]]; then
+  depends git &&
+  depends libtool &&
+  depends automake &&
+  depends autoconf
+fi &&
+
+if list_find "${ALSATOOLS}" "hdspconf" || list_find "${ALSATOOLS}" "hdspmixer"; then
+  depends -sub CXX gcc &&
+  depends fltk
+fi &&
+
+if list_find "${ALSATOOLS}" "echomixer" || list_find "${ALSATOOLS}" "envy24control" || list_find "${ALSATOOLS}" "rmedigicontrol"; then
+  depends gtk+2
+fi &&
+
+if list_find "${ALSATOOLS}" "hdajackretask"; then
+  depends gtk+3
+fi &&
+
+if list_find "${ALSATOOLS}" "hdajacksensetest"; then
+  depends glib2
+fi

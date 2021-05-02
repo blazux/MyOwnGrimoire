@@ -1,0 +1,18 @@
+           SPELL=xfce4-pulseaudio-plugin
+         VERSION=0.4.3
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://archive.xfce.org/src/panel-plugins/$SPELL/$BRANCH/$SOURCE
+        WEB_SITE=https://docs.xfce.org/panel-plugins/xfce4-pulseaudio-plugin/start
+SOURCE_HASH=sha512:d3214b2b7c35a0a87ea60a5d843f5027d1b09f320d4d24c6bf89a8936de92226223cb4dc5368edf4c0a1aedb3b8796510981eeadee8e836e764569d9284f0efa
+      LICENSE[0]=GPL
+         ENTERED=20210502
+        KEYWORDS="xfce pulseaudio"
+           SHORT="this plugin provides a convenient way to adjust the audio volume of the pulseaudio system"
+cat << EOF
+Xfce4-pulseaudio-plugin is a panel plugin for controlling an audio
+output volume of the PulseAudio mixer. The volume can be adjusted using
+keyboard shortcuts, mouse wheel, a slider in a popup menu, or via a
+linked external audio mixer tool.
+EOF

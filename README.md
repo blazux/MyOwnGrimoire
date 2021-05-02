@@ -2,8 +2,8 @@
 
 Some updates for the Source Mage "test" grimoire available here : [https://github.com/sourcemage/grimoire](https://github.com/sourcemage/grimoire)
 
-
 Still a work in progress, use at your own risk.
+
 
 ## Disk :
  - Updated grub2 beta version to 2.06
@@ -17,12 +17,14 @@ Still a work in progress, use at your own risk.
 
 ## Audio-drivers :
  - pulseaudio updated to 14.2
+ - alsa-utils updated to 1.2.4
+ - alsa-tools updated to 1.2.2
+ - alsa-oss updated to 1.1.8
 
 ## Audio-libs :
  - libsndfile updated to 1.0.31
 
 ## XFCE Details :
-
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated
 - notification-daemon-xfce not needed anymore and libsexy won't cast
 - xfce-utils, xfce4-iconbox, xfce4-mixer pretty old and useless as far as I know
@@ -83,3 +85,4 @@ Still a work in progress, use at your own risk.
 #### XFCE SPELL ADDED :
  - xfce4-notifyd : notification service
  - xfce4-whiskermenu-plugin : fancy menu for the xfce panel
+ - xfce4-pulseaudio-plugin : volume control 

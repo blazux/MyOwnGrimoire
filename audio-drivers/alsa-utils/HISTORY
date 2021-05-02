@@ -1,0 +1,278 @@
+2020-10-18 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.2.3
+
+2020-02-21 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.2.2
+
+2019-11-24 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.2.1
+
+2019-05-22 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 1.1.9
+
+2019-05-18 Ismael Luceno <ismael@sourcemage.org>
+	* DEPENDS: Update dependency; s/gettext/GETTEXT/
+
+2019-03-17 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.1.8
+
+2018-08-06 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.1.6
+
+2018-01-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 1.1.5
+
+2017-07-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.1.4
+
+2016-12-22 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.1.3
+
+2016-08-03 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.1.2
+	  fix previous commit
+
+2016-03-31 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 1.1.1
+
+2015-11-09 Pavel Vinogradov <public@sourcemage.org>
+	* DEPENDS: optionally depends on fftw
+
+2015-11-09 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.1.0
+
+2015-02-27 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.0.29
+
+2015-01-31 Pavel Vinogradov <public@sourcemage.org>
+	* BUILD: deleted
+	* DEPENDS: added gettext for scm branch
+	* PRE_BUILD: added, contains most of gitcompile code from scm branch.
+	  now fully non-interactive
+
+2014-07-03 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: Use get_scm_version
+
+2014-06-18 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.0.28
+
+2013-07-28 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.0.27.2
+
+2013-05-30 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.27.1
+
+2013-04-12 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.0.27
+
+2012-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 1.0.26
+
+2012-02-15 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.25
+
+2011-09-26 Ismael Luceno <ismael@sourcemage.org>
+	* BUILD, DEPENDS, DETAILS, PREPARE: Use prepare_select_branch
+
+2011-02-01 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.24.2
+
+2010-04-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.23
+
+2009-12-17 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.22
+
+2009-12-15 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Specify which curses library and depend on ncurses
+
+2009-09-03 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.21
+
+2009-05-07 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.20
+
+2009-01-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.19
+	* DEPENDS: xmlto is _optional_ again
+	* PRE_BUILD, speaker-test.patch: removed
+
+2008-11-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.18
+
+2008-10-29 Vlad Glagolev <stealth@sourcemage.org>
+	* init.d/alsa-state: added, utils-related init stuff
+
+2008-10-13 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.18rc3
+	* DEPENDS: needs xmlto for manual pages
+
+2008-07-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.17, quoting paths!
+	* BUILD, DEPENDS: fixed git build
+	* FINAL: message ftw
+	* PRE_BUILD: quoting paths!
+
+2008-06-09 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.17rc1, added direct scm branch
+	* PREPARE: added for git branch query
+
+2008-04-13 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: which is a runtime-only dependency
+	  Bug #14395
+
+2008-04-02 Ethan Grammatikidis <eekee57@fastmail.fm>
+	* DEPENDS: WHICH -> which
+
+2008-03-28 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: mktemp's included in coreutils already added in DEPENDS
+
+2008-03-28 Ethan Grammatikidis <eekee57@fastmail.fm>
+	* DEPENDS: added mktemp and WHICH
+	  fixes bug #14395
+
+2008-02-06 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.0.16
+	* FINAL: cleaned up spaces
+
+2008-01-31 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.16rc1
+
+2007-10-17 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.15
+
+2007-09-03 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.15rc1
+
+2007-06-09 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.0.14
+
+2007-05-06 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.14rc4
+
+2007-02-09 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.14rc2
+
+2006-12-12 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.14rc1
+
+2006-11-11 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* PRE_BUILD, speaker-test.patch: added to fix #11356
+
+2006-10-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.13
+
+2006-08-31 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.12
+
+2006-07-20 Pol Vinogradov <vin.public@gmail.com>
+	* DETAILS: updated to 1.0.12rc1, BUILD_API=2, MAINTAINER,
+	  UPDATED removed
+
+2006-04-19 Unet <unet@sourcemage.org>
+	* DETAILS: 1.0.11
+
+2006-03-28 David Brown <dmlb2000@gmail.com>
+	* DETAILS: build api 2
+
+2006-03-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.11rc4
+
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2005-11-18 George Sherwood <george@beernabeer.com>
+	* DETAILS: Update to version 1.0.10
+
+2005-06-13 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.9a
+
+2005-05-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.9
+
+2005-03-17 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on mktemp (thanks to afrayedknot and xenocratos)
+
+2005-01-13 Unet <audio@sourcemage.org>
+	* DETAILS: Bump to 1.0.8
+
+2004-11-16 Unet <audio@sourcemage.org>
+	* DETAILS: Bump 1.0.7
+
+2004-10-13 Arjan Bouter <abouter@sourcemage.org>
+	* added desktop files
+
+2004-08-17 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0.6
+
+2004-05-31 Unet <audio@sourcemage.org>
+	* DETAILS: Bump to 1.0.5
+
+2004-04-04 Unet <audio@sourcemage.org>
+	* DETAILS: Up to 1.0.4
+
+2004-03-01 Unet <audio@sourcemage.org>
+	* DETAILS: Updated to 1.0.3
+
+2004-01-27 Unet <audio@sourcemage.org>
+	* DETAILS: Updated to 1.0.2
+	* HISTORY: Reformat
+
+2004-01-08 Unet <audio@sourcemage.org>
+	* DETAILS: Updated to 1.0.1
+
+2003-12-05 Unet <audio@sourcemage.org>
+	* DETAILS: Updated to 1.0.0rc2 (later) tarball md5 changed, fix
+
+2003-12-01 Unet <audio@sourcemage.org>
+	* DETAILS: Updated to 1.0.0rc1
+
+2003-11-19 Unet <audio@sourcemage.org>
+	* DETAILS: Updated to 1.0.0pre1
+
+2003-10-23 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Update to 0.9.8
+	* HISTORY: Formatted to Guru Handbook
+
+2003-09-30 Eric Sandall <sandalle@sourcemage.org>
+	* POST_INSTALL: 'alsa store' is the 'save' command now
+
+2003-09-29 Unet <audio@sourcemage.org>
+	* DETAILS: Bump to 0.9.7
+
+2003-07-30 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Bump to 0.9.6
+
+2003-07-10 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Bump to 0.9.5 (Bug #3715)
+
+2003-06-04 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to 0.9.4
+
+2003-05-07 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to 0.9.3
+
+2003-03-20 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to 0.9.2
+
+2003-03-12 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to 0.9.1
+
+2003-03-03 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to rc8
+
+2002-02-01 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to rc7
+
+2002-11-19 Unet <unet@sourcemage.org>
+	* DETAILS: Bump to rc6
+
+2002-09-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.9.0rc3, added MD5
+	  Cleaned up DETAILS
+
+2002-06-20 Unet <unet@sourcemage.org>
+	* DETAILS: Upgraded to 0.9.0rc2
+
+2002-06-12 Unet <unet@sourcemage.org>
+	* Created this.

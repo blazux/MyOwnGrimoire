@@ -1,0 +1,6 @@
+if [[ ! -f /etc/asound.state ]]; then
+  alsactl store
+  message "${MESSAGE_COLOR}Mixer setting saved."
+  message "You can save the default mixer levels at anytime as root by running:"
+  message "# alsactl store${DEFAULT_COLOR}"
+fi

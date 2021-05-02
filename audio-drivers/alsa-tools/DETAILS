@@ -1,0 +1,28 @@
+. "$GRIMOIRE/FUNCTIONS"
+           SPELL=alsa-tools
+if [[ $ALSA_TOOLS_BRANCH == scm ]]; then
+         VERSION=$(get_scm_version)
+          SOURCE=$SPELL-git.tar.bz2
+   SOURCE_URL[0]=git://git.alsa-project.org/alsa-tools.git:alsa-tools-git
+   SOURCE_IGNORE=volatile
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-git
+  FORCE_DOWNLOAD=1
+else
+         VERSION=1.2.2
+          SOURCE=$SPELL-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.alsa-project.org/pub/tools/$SOURCE
+     SOURCE_HASH=sha512:935d46ee3cc843566ccea183bcf7ea36439a4a6aa22964ebf6fd2722b78ec634d3be4e6a30b04c608abe6c5a132dd633f8343fff19f9d90a756d6699fc849a16
+fi
+     GATHER_DOCS=off
+        WEB_SITE=http://www.alsa-project.org/
+         ENTERED=20040525
+      LICENSE[0]=GPL
+        KEYWORDS="alsa drivers audio"
+           SHORT="Alsa tools for your sound card"
+cat << EOF
+Installs a tool specific to your sound card. Works with ALSA.
+
+This sorcery spell supports one and only one sound card.  If you have more
+or it is ISA, then you will likely have to create a custom spell.
+EOF

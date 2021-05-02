@@ -1,0 +1,23 @@
+. $GRIMOIRE/FUNCTIONS &&
+config_query_multi ALSATOOLS "Which tools do you want to build?" \
+    as10k1 \
+    echomixer \
+    envy24control \
+    hdajackretask \
+    hdajacksensetest \
+    hda-verb \
+    hdspconf \
+    hdsploader \
+    hdspmixer \
+    hwmixvolume \
+    ld10k1 \
+    mixartloader \
+    pcxhrloader \
+    glo10k1 \
+    rmedigicontrol \
+    sb16_csp \
+    seq \
+    sscape_ctl \
+    us428control \
+    usx2yloader \
+    vxloader
