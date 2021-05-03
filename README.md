@@ -11,7 +11,7 @@ Still a work in progress, use at your own risk.
 ## Xorg-driver :
  - Updated xf86-video-ati with patch for gcc-10+
 
-##X11-tollkits :
+## X11-toolkits :
  - gtkmm3 dependency updatedn now compile without problem (gtkmm is needed by pavucontrol)
 
 ## Gnome2-libs :
