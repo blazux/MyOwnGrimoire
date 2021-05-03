@@ -12,12 +12,12 @@ Still a work in progress, use at your own risk.
  - Updated xf86-video-ati with patch for gcc-10+
 
 ## X11-toolkits :
- - gtkmm3 dependency updatedn now compile without problem (gtkmm is needed by pavucontrol)
+ - gtkmm3 dependencies updated now compile without problem (gtkmm3 is needed by pavucontrol)
 
 ## Gnome2-libs :
  - sorting dependency problem on vte (needed by xfce4-terminal)
  - updated gsettings-desktop-schemas for testing purpose
- - atkmm1.6 : nex spell added to solve gtkmm3 dependency problem (same trick as cairomm and pangomm)
+ - atkmm1.6 : new spell added to solve gtkmm3 dependency problem (same trick as cairomm and pangomm)
 
 ## Audio-drivers :
  - pulseaudio updated to 14.2
