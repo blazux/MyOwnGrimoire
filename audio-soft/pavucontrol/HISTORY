@@ -1,0 +1,35 @@
+2016-12-04 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: version 3.0
+	* *.sig: gone, switched to hash
+
+2013-05-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 2.0
+
+2012-04-20 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: 1.0 uses gtkmm3, not gtkmm2
+
+2011-12-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0, WEB_SITE and SOURCE_URL[0] updated
+
+2009-10-24 Bearcat M. Sandor <sourcemage@feline-soul.com>
+	* DETAILS: updated spell to 0.9.10
+
+2009-09-10 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.9
+
+2009-04-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.9.8
+
+2008-10-31 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 0.9.7
+	* DEPENDS: Depends on libcanberra
+
+2007-11-03 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: added lynx as optional depends
+
+2007-11-01 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DETAILS: updated to 0.9.5
+
+2007-10-16 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS, DETAILS, HISTORY: created this spell
+

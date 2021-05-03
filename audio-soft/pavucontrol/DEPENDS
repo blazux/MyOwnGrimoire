@@ -1,0 +1,9 @@
+depends  gtkmm3      &&
+depends  pulseaudio  &&
+depends  libcanberra &&
+
+optional_depends lynx                                      \
+                 "--enable-lynx"                           \
+                 "--disable-lynx"                          \
+                 "Use lynx for documentation generation?"
+

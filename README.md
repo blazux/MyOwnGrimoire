@@ -24,6 +24,9 @@ Still a work in progress, use at your own risk.
 ## Audio-libs :
  - libsndfile updated to 1.0.31
 
+## Audio-soft
+ - pavucontrol updated to 4.0 + libglademm dependency removed
+
 ## XFCE Details :
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated
 - notification-daemon-xfce not needed anymore and libsexy won't cast
