@@ -1,0 +1,11 @@
+depends meson &&
+
+depends glibmm &&
+depends gtk+3 &&
+depends cairomm1.0 &&
+depends pangomm1.4 &&
+depends atkmm1.6 &&
+
+if list_find "$GTKMM3_OPTS" "build-documentation=true"; then
+  depends -sub DOC glibmm
+fi

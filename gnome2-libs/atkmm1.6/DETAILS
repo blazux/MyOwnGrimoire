@@ -1,0 +1,15 @@
+source "$GRIMOIRE/MESON_FUNCTIONS"
+           SPELL=atkmm1.6
+         VERSION=2.28.1
+          BRANCH=`echo $VERSION|cut -d . -f 1,2` 
+          SOURCE=atkmm-$VERSION.tar.xz
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/atkmm-$VERSION"
+   SOURCE_URL[0]=$GNOME_URL/sources/atkmm/$BRANCH/$SOURCE
+      SOURCE_HASH=sha512:9f336b594930b62e9789011f4584f569d40b6153e5f3f04ac0f5b48704c50fb7b99d3f5d8639eec8dfd42b9c268df3cf21c2ae2372fdb781729fa29c57365916
+      LICENSE[0]=LGPL
+        WEB_SITE=http://library.gnome.org/devel/atkmm/
+         ENTERED=20101022
+           SHORT="C++ binding for the ATK library"
+cat << EOF
+C++ binding for the ATK library.
+EOF

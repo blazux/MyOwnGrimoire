@@ -1,0 +1,32 @@
+2020-12-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 3.24.3
+	* DEPENDS, DETAILS, CONFIGURE: use meson
+
+2020-01-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 3.24.2
+
+2019-08-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 3.24.1
+
+2016-03-06 Thomas Orgis <sobukus@sourcemage.org>
+	* BUILD: C++11 mode
+
+2015-01-21 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 3.11.10
+
+2013-05-04 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated VERSION to 3.8.1
+
+2013-03-30 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated spell to 3.6.0
+	  bz2 -> xz
+
+2011-10-02 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.2.0
+
+2011-05-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 3.0.1
+
+2011-04-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS, DEPENDS, BUILD, CONFIGURE: spell created, version 3.0.0
+
