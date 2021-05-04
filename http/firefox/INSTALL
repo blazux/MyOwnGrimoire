@@ -1,7 +1,8 @@
 if [[ "$MOZBIN" == "y" ]]; then
-  mkdir -p /usr/share/firefox &&
-  cp -vr $SOURCE_DIRECTORY/* /usr/share/firefox/ &&
-  ln -s /usr/share/firefox/firefox /usr/bin/firefox
+  INSTALL_DIR="/usr/share/$SPELL"
+  mkdir -p $INSTALL_DIR &&
+  cp -vr $SOURCE_DIRECTORY/* $INSTALL_DIR &&
+  ln -s $INSTALL_DIR/firefox /usr/bin/firefox
 
 #REGULAR INSTALL
 else
