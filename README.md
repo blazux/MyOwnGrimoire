@@ -31,6 +31,9 @@ Still a work in progress, use at your own risk.
 ## Audio-soft
  - pavucontrol updated to 4.0 + libglademm dependency removed
 
+## Http
+ - firefox : added an option to install pre-compiled version from mozilla (kind of dirty, yes I know)
+
 ## XFCE Details :
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated
 - notification-daemon-xfce not needed anymore and libsexy won't cast
