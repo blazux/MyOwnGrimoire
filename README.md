@@ -32,7 +32,10 @@ Still a work in progress, use at your own risk.
  - pavucontrol updated to 4.0 + libglademm dependency removed
 
 ## Http
- - firefox : added an option to install pre-compiled version from mozilla (kind of dirty, yes I know)
+ - firefox added an option to install pre-compiled version from mozilla (kind of dirty, yes I know)
+
+## Devel
+ - rust added an option to install pre-compiled version as weel (HERESY !!!)
 
 ## XFCE Details :
 - libxfce4menu, libxfcegui4 have been removed, they're deprecated

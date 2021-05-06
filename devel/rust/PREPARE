@@ -1,0 +1,2 @@
+#Binary or regular install
+config_query RUSTBIN "Install from binaries instead of compiling?" n

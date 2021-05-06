@@ -1,0 +1,24 @@
+if [[ "$RUSTBIN" == "y" ]]; then
+  mkdir -p "$SOURCE_DIRECTORY" &&
+  cd $SOURCE_DIRECTORY &&
+  wget $SOURCE_URL -O $BINSH
+else
+
+  default_pre_build    &&
+  cd "$SOURCE_DIRECTORY" &&
+  apply_patch_dir patches &&
+
+  # remove checksums to avoid failure with patched sources
+  sed -i 's/"files":{[^}]*}/"files":{}/' \
+      vendor/{libc,openssl-sys}/.cargo-checksum.json &&
+
+  # Bootstrapping
+  if ! spell_ok "$SPELL"; then
+    unpack_file 3 &&
+    unpack_file 4 &&
+    unpack_file 5
+  fi &&
+
+  # avoid rebuilding llvm
+  rm -r src/llvm-project
+fi

@@ -1,0 +1,14 @@
+if [[ "$RUSTBIN" == "y" ]]; then
+  true
+else
+  depends llvm " --llvm-root=$INSTALL_ROOT/usr --disable-llvm-version-check --disable-codegen-tests"&&
+  depends -sub CXX gcc &&
+  depends bison   &&
+  depends curl    &&
+  depends flex    &&
+  depends libxslt &&
+  depends python3 '--python=python3' &&
+  optional_depends ccache   '' '' 'optimise compile times' &&
+  optional_depends gdb      '' '' 'debugger' &&
+  optional_depends valgrind '' '' 'leak detector'
+fi

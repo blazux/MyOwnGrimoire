@@ -1,0 +1,49 @@
+           SPELL=rust
+
+if [[ "$RUSTBIN" == "y" ]]; then
+         VERSION=1.51.0
+      SOURCE_URL=https://sh.rustup.rs
+           BINSH=rustup.sh
+           SOURCE=$SPELL
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+     SOURCE_HASH=sha512:a078917c49cddceeeb93a136fc7d78289df0c2918ab7469f3c42c5d7525242dacd7e841fcec2f21ff5d703e8d348cd2ecf0511b1e1a151c682470a2d44001fe7
+
+#regular build
+else
+         VERSION=1.49.0
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/rustc-$VERSION-src
+           TMPFS=off
+          SOURCE=rustc-$VERSION-src.tar.xz
+         SOURCE2=$SOURCE.asc
+          BUILDX="${BUILD/-pc-/-unknown-}"
+         SOURCE3="cargo-$VERSION-${BUILDX}.tar.xz"
+         SOURCE4="rust-std-$VERSION-${BUILDX}.tar.xz"
+         SOURCE5="rustc-$VERSION-${BUILDX}.tar.xz"
+        DIST_URL=https://static.rust-lang.org/dist
+      SOURCE_URL=("$DIST_URL/$SOURCE")
+     SOURCE2_URL=("${SOURCE_URL[0]}.asc")
+     SOURCE3_URL=("$DIST_URL/$SOURCE3")
+     SOURCE4_URL=("$DIST_URL/$SOURCE4")
+     SOURCE5_URL=("$DIST_URL/$SOURCE5")
+      SOURCE_GPG=rust.gpg:$SOURCE.asc:UPSTREAM_KEY
+  SOURCE2_IGNORE=signature
+case "${BUILDX}" in
+x86_64-unknown-linux-musl)
+    SOURCE3_HASH=sha512:1655604a69e1e5b0bfca0ed0b5a2d59dc6379f5fcc01d0a23383196f28c4a435d397333c26a3e3ae664280f1951cb3abe2a964c5b7648b518b114253cdcc6f71
+    SOURCE4_HASH=sha512:5456ea31b927d1698ee974ebdbe42ae67a01b847028d275120c39cbf48da1b654e3259c8f4b4ee2c1ae3ec3607169320dbdf7c295f80330ca02ca4fd47de4982
+    SOURCE5_HASH=sha512:0115d2116df97c5a7ce36b3329829f8d5cd28897603f953ce3da740eeaedc49a606ead448f0afcfeb63bb7a4f99cb0988d4c4e56159c651e85347dd6de1f0d38
+  ;;
+x86_64-unknown-linux-gnu)
+    SOURCE3_HASH=sha512:bb1bdebdd6fd692cca3ad73538ec1ffe9157eb07382628dbcc7ffaf7f19b9341c100731d43050584572e430a3e97bd73774036dfe3a4b7e00d22598e3d883b0e
+    SOURCE4_HASH=sha512:15589f387602d1b785e9482f42afb449df2add70637ca8314fb2f5d6cb776b61eab431c573cde73eaea8ecf9f12b47baf6ff5d344482e3eec89ba6d3b4e98ebd
+    SOURCE5_HASH=sha512:c3c4094adb2df1c8037434ca959e5e9dd10c4818f45aaf37967f3ba819e6e332a15f1a23039a3a425369453407bcc67d7b6331fcf480227d7d9aa028c7b297c6
+  ;;
+esac
+fi
+        WEB_SITE=https://www.rust-lang.org/
+         ENTERED=20130529
+      LICENSE[0]=MIT
+           SHORT="safe, concurrent, practical language"
+cat << EOF
+Rust is a safe, concurrent, practical programming language.
+EOF
