@@ -6,10 +6,7 @@ depends  smgl-fhs  &&
 
 if [[ "${GRUB2_RELEASE}" != "stable" ]]; then
   depends autoconf
-fi &&
-
-if [[ "${GRUB2_RELEASE}" != "beta" ]]; then
-  depends python
+  depends python3
 fi &&
 
 
