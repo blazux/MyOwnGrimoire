@@ -1,0 +1,21 @@
+ninja install &&
+
+#echo "systemd-journal-remote:x:982:982:systemd Journal Remote:/:/usr/bin/nologin" >> /etc/passwd &&
+#echo "systemd-network:x:981:981:systemd Network Management:/:/usr/bin/nologin" >> /etc/passwd &&
+#echo "systemd-resolve:x:980:980:systemd Resolver:/:/usr/bin/nologin" >> /etc/passwd &&
+#echo "systemd-timesync:x:979:979:systemd Time Synchronization:/:/usr/bin/nologin" >> /etc/passwd &&
+#echo "systemd-coredump:x:978:978:systemd Core Dumper:/:/usr/bin/nologin" >> /etc/passwd &&
+#echo "systemd-oom:x:971:971:systemd Userspace OOM Killer:/:/usr/bin/nologin" >> /etc/passwd &&
+
+#echo "systemd-journal:x:984:" >> /etc/group &&
+#echo "systemd-journal-remote:x:982:" >> /etc/group &&
+#echo "systemd-network:x:981:" >> /etc/group &&
+#echo "systemd-resolve:x:980:" >> /etc/group &&
+#echo "systemd-timesync:x:979:" >> /etc/group &&
+#echo "systemd-coredump:x:978:" >> /etc/group &&
+#echo "systemd-oom:x:971:" >> /etc/group &&
+
+
+if ! [ -f ${INSTALL_ROOT}/etc/vconsole.conf ]; then
+  echo "FONT=default8x16" > ${INSTALL_ROOT}/etc/vconsole.conf
+fi

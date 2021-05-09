@@ -8,6 +8,9 @@ Still a work in progress, use at your own risk.
 ## Disk :
  - Updated grub2 beta version to 2.06
 
+## SMGL :
+ - Added Systemd v248, work in progress lots of options still missing
+
 ## Xorg-driver :
  - Updated xf86-video-ati with patch for gcc-10+
 

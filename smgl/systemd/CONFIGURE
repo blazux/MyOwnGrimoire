@@ -1,0 +1,10 @@
+# OLD stuff to clean
+
+#config_query_option SYSTEMD_BINFMT "Enable binfmt tool?" y "--enable-binfmt" "--disable-binfmt" &&
+#config_query_option SYSTEMD_HOSTNAMED "Enable hostname daemon?" y "--enable-hostnamed" "--disable-hostnamed" &&
+#config_query_option SYSTEMD_TIMEDATED "Enable timedate daemon?" y "--enable-timedated" "--disable-timedated" &&
+#config_query_option SYSTEMD_LOCALED "Enable locale daemon?" y "--enable-localed" "--disable-localed"
+
+# Brand new
+config_query_option SYSTEMD_BINFMT "Enable binfmt tool?" y "-Dbinfmt=true" "-Dbinfmt=false" &&
+config_query_option SYSTEMD_FIRSTBOOT "Enable firstboot tool?" y "-Dfirstboot=true" "-Dfirstboot=false"
