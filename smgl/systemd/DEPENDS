@@ -9,9 +9,6 @@ depends pkgconfig &&
 depends gperf &&
 depends python3 &&
 
-
-
-
 optional_depends linux-pam "-DPAM=true" "-DPAM=false" "Enable PAM support" &&
 optional_depends openssl "-Dopenssl=true" "-Dopenssl=false" "Enable OpenSSL support" &&
 optional_depends cryptsetup "-Dlibcryptsetup=true" "-Dlibcryptsetup=false" "Enable libcryptsetup support" &&
