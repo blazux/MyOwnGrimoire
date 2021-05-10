@@ -1,4 +1,4 @@
-#depends ninja-build-system &&
+depends ninja-build-system &&
 runtime_depends util-linux &&
 
 depends DEVICE-MANAGER &&
@@ -7,16 +7,19 @@ depends intltool &&
 depends libcap &&
 depends pkgconfig &&
 depends gperf &&
-depends python3
+depends python3 &&
 
 
 
 
-#optional_depends linux-pam "--enable-pam" "--disable-pam" "Enable PAM support" &&
-#optional_depends cryptsetup "--enable-libcryptsetup" "--disable-libcryptsetup" "Enable cryptsetup tools" &&
-#optional_depends libselinux "--enable-selinux" "--disable-selinux" "Enable SELINUX support" &&
-#optional_depends audit "--enable-audit" "--disable-audit" "Enable audit support" &&
-
-#the following don't have --configure options but are listed in the README
-#optional_depends libnotify "" "" "Enable use of libnotify" &&
-#optional_depends tcp_wrappers "--enable-tcpwrap" "--disable-tcpwrap" "Enable use of tcpwrappers"
+optional_depends linux-pam "-DPAM=true" "-DPAM=false" "Enable PAM support" &&
+optional_depends openssl "-Dopenssl=true" "-Dopenssl=false" "Enable OpenSSL support" &&
+optional_depends cryptsetup "-Dlibcryptsetup=true" "-Dlibcryptsetup=false" "Enable libcryptsetup support" &&
+optional_depends libselinux "-DSELinux=true" "-DSELinuxp=false" "Enable SELinux support" &&
+optional_depends libpwquality "-Dpwquality=true" "-Dpwquality=false" "Enable libpwquality support" &&
+optional_depends p11-kit "-Dp11kit=true" "-Dp11kit=false" "Enable p11-kit support" &&
+optional_depends acl "-DACL=true" "-DACL=false" "Enable ACL support" &&
+optional_depends audit "-DAUDIT=true" "-DAUDIT=false" "Enable audit support" &&
+optional_depends elfutils "-Delfutils=true" "-Delfutils=false" "Enable elfutils support" &&
+optional_depends kmod "-Dkmod=true" "-Dkmod=false" "Enable kmod support" &&
+optional_depends docbook-xsl "-Ddocdir=/usr/share/doc/systemd-248" " " "Enable docbook-xsl (for Documentation)"
