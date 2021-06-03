@@ -1,9 +1,9 @@
            SPELL=garcon
-         VERSION=0.8.0
-          BRANCH=4.16
+         VERSION=4.16.1
+          BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
-   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
-     SOURCE_HASH=sha512:708c68c31c0d3d89ecdde4790594837af0d065ecb805131fd7db2eb4c433c0523f44d51f2040f7bf9af729537e5f9e89ed06a435fc0c4e6113db00ad78ba8ce0
+   SOURCE_URL[0]=https://archive.xfce.org/src/xfce/$SPELL/$BRANCH/$SOURCE
+     SOURCE_HASH=sha512:07391e72dceebd0f584beb3f9ca954bd7dc8a078a83d1025b0abf7a439bf56a98e8825868530c47f0ee8411b69bbc1f6c4127f5ea5253ecf8de259056112b42b
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
         WEB_SITE=https://docs.xfce.org/xfce/garcon/start
       LICENSE[0]=LGPL

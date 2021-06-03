@@ -1,9 +1,9 @@
            SPELL=mousepad
-         VERSION=0.5.4
+         VERSION=0.5.5
           BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
    SOURCE_URL[0]=http://archive.xfce.org/src/apps/$SPELL/$BRANCH/$SOURCE
-     SOURCE_HASH=sha512:52d1d9b235b13a651ee7e6e1633074c7829c27e880033637eacdd7cd63f246d1f47d0cd2c981cf2a7eb96dbb7119204a685f00a60968e4478d5057bce8500370
+     SOURCE_HASH=sha512:5c6d6d048fe8a08c04ddeff7adb7d621d9beac631dd58fe5778cc8236e06ddb4ab50380eaebf4236c655b6d26058242024d5d3bbb1772607ab1f10744f8936f1
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
         WEB_SITE=https://docs.xfce.org/apps/mousepad/start
       LICENSE[0]=GPL

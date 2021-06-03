@@ -3,7 +3,7 @@
           BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+   SOURCE_URL[0]=https://archive.xfce.org/src/xfce/$SPELL/$BRANCH/$SOURCE
         WEB_SITE=https://docs.xfce.org/xfce/xfdesktop/start
      SOURCE_HASH=sha512:d2e6b272243d6eda71f42cb3df18cb9c0745a1864718639e9aa494902dfe5b4989b2761fee2195456e5725cad0f744978f9c95c6f01e48aa016a919ce3468344
       LICENSE[0]=LGPL

@@ -1,11 +1,11 @@
            SPELL=xfce4-appfinder
-         VERSION=4.16.0
+         VERSION=4.16.1
           BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-   SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+   SOURCE_URL[0]=https://archive.xfce.org/src/xfce/$SPELL/$BRANCH/$SOURCE
         WEB_SITE=https://docs.xfce.org/xfce/xfce4-appfinder/start
-     SOURCE_HASH=sha512:e2caa296960769d96395e932d7f2301467ad0d02d24fbcc9e6e79c1774d51a3e854cebdf8fee70fc1c9e68c3ab5a3c3a1e370762978bc2b2797c62de040ef88a
+     SOURCE_HASH=sha512:5a28d93675af7d77de3050e7df9e064a0fd94d579d7e617878329d4385b42594afd8de96740cb91de38ffcc22bda71e4f90b61ff401980a5582bf09b2a19870c
       LICENSE[0]=GPL
          ENTERED=20030608
         KEYWORDS="menu xfce"

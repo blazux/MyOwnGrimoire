@@ -2,7 +2,7 @@
          VERSION=4.16.0
           BRANCH=`echo $VERSION | cut -d . -f 1,2`
           SOURCE=$SPELL-$VERSION.tar.bz2
-SOURCE_URL[0]=https://archive.xfce.org/xfce/$BRANCH/src/$SOURCE
+SOURCE_URL[0]=https://archive.xfce.org/src/xfce/$SPELL/$BRANCH/$SOURCE
      SOURCE_HASH=sha512:1c6ecfb7696bc13c9b11fdfb4ad4e3278de2350bbc59c84c933b28c07c1a0c55b9954794e1f57e4407d2b54ffaace9ea5baed829bf0683332cf9d12bff7e71ec
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=https://docs.xfce.org/xfce/xfce4-power-manager/start
